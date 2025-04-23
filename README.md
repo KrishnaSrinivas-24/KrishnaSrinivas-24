@@ -1,8 +1,5 @@
 <h1 align="center">Hi 👋, I'm Krishna Srinivas</h1>
 <h3 align="center">Tech enthusiast on a journey to build smarter solutions with code and creativity</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=krishnasrinivas-24&label=Profile%20views&color=0e75b6&style=flat" alt="krishnasrinivas-24" /> </p>
-
 <p align="left"> <a href="https://twitter.com/krishna240905" target="blank"><img src="https://img.shields.io/twitter/follow/krishna240905?logo=twitter&style=for-the-badge" alt="krishna240905" /></a> </p>
 
 - 🔭 I’m currently working on [JARVIS](https://github.com/KrishnaSrinivas-24/JARVIS)
