@@ -51,13 +51,15 @@
 
 ---
 
+<!--
 ### 🏆 GitHub Trophies
-
+(Hidden until trophies are earned)
 <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img src="https://github-profile-trophy.vercel.app/?username=KrishnaSrinivas-24&theme=onedark" alt="trophy" />
   </a>
 </div>
+-->
 
 ---
 
