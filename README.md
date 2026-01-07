@@ -72,7 +72,8 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=krishnasrinivas-24&theme=dracula" alt="Streak" />
 </div>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=KrishnaSrinivas-24)](https://github.com/ryo-ma/github-profile-trophy)
+<h3 align="center"> GitHub Trophies </h3>
+<p align="center"><img src="https://github-trophies.vercel.app/?username=KrishnaSrinivas-24&theme=alduin&no-frame=false&no-bg=true&margin-w=4" /></p>
 ---
 
 ### 🌐 Connect with Me
