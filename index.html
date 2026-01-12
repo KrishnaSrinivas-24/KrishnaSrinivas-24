@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -32,6 +32,7 @@
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="projects-styles.css">
 
     <script>
         tailwind.config = {
@@ -985,31 +986,70 @@
         }
 
         /* ============================================
-           3D STACKED FILE SYSTEM (TONY STARK STYLE)
+           SIDE-PANEL FILE SYSTEM (FOLDER STRUCTURE)
            ============================================ */
 
+        /* Main container - split layout */
         .stark-stack-container {
             position: relative;
-            min-height: 550px;
+            min-height: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        /* Left panel - Detail view area */
+        .stark-detail-panel {
+            position: relative;
+            min-height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
-            perspective: 1200px;
         }
 
+        .stark-detail-placeholder {
+            text-align: center;
+            padding: 3rem;
+            border: 2px dashed rgba(0, 243, 255, 0.2);
+            border-radius: 12px;
+            background: rgba(0, 20, 40, 0.3);
+            width: 100%;
+        }
+
+        .stark-detail-placeholder i {
+            opacity: 0.5;
+        }
+
+        .stark-detail-placeholder p {
+            margin-top: 1rem;
+            color: #666;
+            font-size: 12px;
+            font-family: 'Space Mono', monospace;
+            letter-spacing: 1px;
+        }
+
+        /* Right panel - Stacked folders */
         .stark-stack-wrapper {
             position: relative;
             width: 100%;
-            max-width: 700px;
-            height: 450px;
+            height: 500px;
+            perspective: 1200px;
+        }
+
+        .stark-stack-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
             transform-style: preserve-3d;
-            transform: rotateY(-25deg) rotateX(5deg);
+            transform: rotateY(-15deg) rotateX(5deg);
         }
 
         .stark-stack-file {
             position: absolute;
-            width: 420px;
-            height: 90px;
+            width: 380px;
+            height: 85px;
             cursor: pointer;
             transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
             transform-style: preserve-3d;
@@ -1019,70 +1059,98 @@
 
         /* 3D Folder Stack - Files arranged from front-left to back-right */
         .stark-stack-file[data-index="0"] {
-            transform: translate(-50%, -50%) translateZ(250px) translateX(-180px) translateY(120px);
+            transform: translate(-50%, -50%) translateZ(200px) translateX(-100px) translateY(120px);
             z-index: 6;
         }
 
         .stark-stack-file[data-index="1"] {
-            transform: translate(-50%, -50%) translateZ(200px) translateX(-110px) translateY(70px);
+            transform: translate(-50%, -50%) translateZ(160px) translateX(-60px) translateY(70px);
             z-index: 5;
         }
 
         .stark-stack-file[data-index="2"] {
-            transform: translate(-50%, -50%) translateZ(150px) translateX(-40px) translateY(20px);
+            transform: translate(-50%, -50%) translateZ(120px) translateX(-20px) translateY(20px);
             z-index: 4;
         }
 
         .stark-stack-file[data-index="3"] {
-            transform: translate(-50%, -50%) translateZ(100px) translateX(30px) translateY(-30px);
+            transform: translate(-50%, -50%) translateZ(80px) translateX(20px) translateY(-30px);
             z-index: 3;
         }
 
         .stark-stack-file[data-index="4"] {
-            transform: translate(-50%, -50%) translateZ(50px) translateX(100px) translateY(-80px);
+            transform: translate(-50%, -50%) translateZ(40px) translateX(60px) translateY(-80px);
             z-index: 2;
         }
 
         .stark-stack-file[data-index="5"] {
-            transform: translate(-50%, -50%) translateZ(0px) translateX(170px) translateY(-130px);
+            transform: translate(-50%, -50%) translateZ(0px) translateX(100px) translateY(-130px);
             z-index: 1;
         }
 
-        /* CRITICAL: All files clickable - hover brings file to front */
-        .stark-stack-file:hover:not(.expanded) {
-            z-index: 100 !important;
-            transform: translate(-50%, -50%) translateZ(300px) translateX(var(--base-x)) translateY(var(--base-y)) scale(1.08);
-            filter: brightness(1.2);
-        }
-
+        /* CSS custom properties for hover */
         .stark-stack-file[data-index="0"] {
-            --base-x: -180px;
+            --base-x: -100px;
             --base-y: 120px;
         }
 
         .stark-stack-file[data-index="1"] {
-            --base-x: -110px;
+            --base-x: -60px;
             --base-y: 70px;
         }
 
         .stark-stack-file[data-index="2"] {
-            --base-x: -40px;
+            --base-x: -20px;
             --base-y: 20px;
         }
 
         .stark-stack-file[data-index="3"] {
-            --base-x: 30px;
+            --base-x: 20px;
             --base-y: -30px;
         }
 
         .stark-stack-file[data-index="4"] {
-            --base-x: 100px;
+            --base-x: 60px;
             --base-y: -80px;
         }
 
         .stark-stack-file[data-index="5"] {
-            --base-x: 170px;
+            --base-x: 100px;
             --base-y: -130px;
+        }
+
+        /* Hover effect - brings file forward */
+        .stark-stack-file:hover {
+            z-index: 100 !important;
+            transform: translate(-50%, -50%) translateZ(250px) translateX(var(--base-x)) translateY(var(--base-y)) scale(1.05);
+            filter: brightness(1.15);
+        }
+
+        /* Active/Selected file */
+        .stark-stack-file.active {
+            z-index: 100 !important;
+            transform: translate(-50%, -50%) translateZ(250px) translateX(var(--base-x)) translateY(var(--base-y)) scale(1.08);
+            filter: brightness(1.2);
+        }
+
+        .stark-stack-file.active .stark-stack-card {
+            box-shadow: 0 0 60px rgba(0, 243, 255, 0.5);
+        }
+
+        .stark-stack-file.active .stark-stack-card.card-red {
+            box-shadow: 0 0 60px rgba(255, 85, 85, 0.5);
+        }
+
+        .stark-stack-file.active .stark-stack-card.card-green {
+            box-shadow: 0 0 60px rgba(74, 222, 128, 0.5);
+        }
+
+        .stark-stack-file.active .stark-stack-card.card-yellow {
+            box-shadow: 0 0 60px rgba(250, 204, 21, 0.5);
+        }
+
+        .stark-stack-file.active .stark-stack-card.card-purple {
+            box-shadow: 0 0 60px rgba(168, 85, 247, 0.5);
         }
 
         .stark-stack-card {
@@ -1092,7 +1160,7 @@
             border: 1px solid rgba(0, 243, 255, 0.4);
             position: relative;
             overflow: hidden;
-            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
             backdrop-filter: blur(10px);
         }
 
@@ -1120,6 +1188,18 @@
             box-shadow: 0 0 40px rgba(255, 85, 85, 0.3);
         }
 
+        .stark-stack-file:hover .stark-stack-card.card-green {
+            box-shadow: 0 0 40px rgba(74, 222, 128, 0.3);
+        }
+
+        .stark-stack-file:hover .stark-stack-card.card-yellow {
+            box-shadow: 0 0 40px rgba(250, 204, 21, 0.3);
+        }
+
+        .stark-stack-file:hover .stark-stack-card.card-purple {
+            box-shadow: 0 0 40px rgba(168, 85, 247, 0.3);
+        }
+
         /* Collapsed view */
         .stark-collapsed-view {
             display: flex;
@@ -1134,137 +1214,166 @@
             align-items: center;
         }
 
-        /* Expanded state - FOLDER STYLE */
-        .stark-stack-file.expanded {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%;
-            max-width: 950px;
-            height: auto;
-            z-index: 1000;
+        /* Hide expanded view in the file itself */
+        .stark-expanded-view {
+            display: none;
         }
 
-        .stark-stack-file.expanded .stark-stack-card {
-            height: auto;
-            min-height: 480px;
+        /* ===== SIDE PANEL DETAIL CARD ===== */
+        .stark-side-detail {
+            position: relative;
+            width: 100%;
+            opacity: 0;
+            transform: translateX(-30px) scale(0.95);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            visibility: hidden;
+        }
+
+        .stark-side-detail.active {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+            visibility: visible;
+        }
+
+        .stark-side-content {
             background: linear-gradient(180deg,
                     #0f2847 0%,
                     #122d4f 10%,
                     #153458 50%,
                     #183a60 100%);
             border: 3px solid rgba(0, 243, 255, 0.9);
-            border-top: none;
-            border-radius: 0 0 8px 8px;
+            border-radius: 0 12px 12px 12px;
+            padding: 2rem;
+            position: relative;
             box-shadow:
-                0 25px 100px rgba(0, 0, 0, 0.9),
-                0 0 80px rgba(0, 243, 255, 0.6),
-                inset 0 0 100px rgba(0, 243, 255, 0.1);
+                0 15px 60px rgba(0, 0, 0, 0.6),
+                0 0 50px rgba(0, 243, 255, 0.4),
+                inset 0 0 60px rgba(0, 243, 255, 0.08);
         }
 
-        /* Folder Tab at Top */
-        .stark-stack-file.expanded .stark-stack-card::before {
-            content: '';
+        .stark-side-content.card-red {
+            border-color: rgba(255, 85, 85, 0.9);
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(255, 85, 85, 0.4);
+        }
+
+        .stark-side-content.card-green {
+            border-color: rgba(74, 222, 128, 0.9);
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(74, 222, 128, 0.4);
+        }
+
+        .stark-side-content.card-yellow {
+            border-color: rgba(250, 204, 21, 0.9);
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(250, 204, 21, 0.4);
+        }
+
+        .stark-side-content.card-purple {
+            border-color: rgba(168, 85, 247, 0.9);
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(168, 85, 247, 0.4);
+        }
+
+        /* Folder Tab for Side Panel */
+        .stark-side-tab {
             position: absolute;
             top: -38px;
-            left: 20px;
-            width: 220px;
+            left: 0;
+            width: 200px;
             height: 40px;
             background: linear-gradient(180deg, #153458 0%, #0f2847 100%);
             border: 3px solid rgba(0, 243, 255, 0.9);
             border-bottom: none;
-            border-radius: 10px 10px 0 0;
-            z-index: 1;
-        }
-
-        /* Folder Tab Label */
-        .stark-stack-file.expanded .stark-stack-card::after {
-            content: '📂 PROJECT FILE';
-            position: absolute;
-            top: -28px;
-            left: 35px;
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 11px;
             font-family: 'Space Mono', monospace;
             color: #00f3ff;
             letter-spacing: 1px;
-            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+            text-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
         }
 
-        .stark-stack-file.expanded .stark-stack-card.card-red {
-            border-color: rgba(255, 85, 85, 0.8);
-            box-shadow:
-                0 20px 80px rgba(0, 0, 0, 0.8),
-                0 0 60px rgba(255, 85, 85, 0.4);
-        }
-
-        .stark-stack-file.expanded .stark-stack-card.card-red::before {
-            border-color: rgba(255, 85, 85, 0.8);
-        }
-
-        .stark-stack-file.expanded .stark-stack-card.card-red::after {
+        .stark-side-content.card-red .stark-side-tab {
+            border-color: rgba(255, 85, 85, 0.9);
             color: #ff5555;
-            text-shadow: 0 0 10px rgba(255, 85, 85, 0.5);
+            text-shadow: 0 0 15px rgba(255, 85, 85, 0.7);
         }
 
-        .stark-stack-file.expanded .stark-stack-card.card-green::before {
-            border-color: rgba(74, 222, 128, 0.8);
-        }
-
-        .stark-stack-file.expanded .stark-stack-card.card-green::after {
+        .stark-side-content.card-green .stark-side-tab {
+            border-color: rgba(74, 222, 128, 0.9);
             color: #4ade80;
         }
 
-        .stark-stack-file.expanded .stark-stack-card.card-yellow::before {
-            border-color: rgba(250, 204, 21, 0.8);
-        }
-
-        .stark-stack-file.expanded .stark-stack-card.card-yellow::after {
+        .stark-side-content.card-yellow .stark-side-tab {
+            border-color: rgba(250, 204, 21, 0.9);
             color: #facc15;
         }
 
-        .stark-stack-file.expanded .stark-stack-card.card-purple::before {
-            border-color: rgba(168, 85, 247, 0.8);
-        }
-
-        .stark-stack-file.expanded .stark-stack-card.card-purple::after {
+        .stark-side-content.card-purple .stark-side-tab {
+            border-color: rgba(168, 85, 247, 0.9);
             color: #a855f7;
         }
 
-        .stark-stack-file.expanded .stark-collapsed-view {
-            display: none;
+        /* Close button in side panel */
+        .stark-side-close {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 243, 255, 0.15);
+            border: 2px solid rgba(0, 243, 255, 0.5);
+            color: #00f3ff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            border-radius: 4px;
         }
 
-        .stark-expanded-view {
-            display: none;
-            padding: 2.5rem;
-            padding-top: 2rem;
+        .stark-side-close:hover {
+            background: rgba(0, 243, 255, 0.3);
+            transform: rotate(90deg);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
         }
 
-        .stark-stack-file.expanded .stark-expanded-view {
-            display: block;
+        .stark-side-content.card-red .stark-side-close {
+            border-color: rgba(255, 85, 85, 0.5);
+            color: #ff5555;
         }
 
-        .stark-expanded-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+        .stark-side-content.card-green .stark-side-close {
+            border-color: rgba(74, 222, 128, 0.5);
+            color: #4ade80;
         }
 
-        @media (max-width: 768px) {
-            .stark-expanded-content {
-                grid-template-columns: 1fr;
-            }
+        .stark-side-content.card-yellow .stark-side-close {
+            border-color: rgba(250, 204, 21, 0.5);
+            color: #facc15;
         }
 
-        .stark-expanded-image {
+        .stark-side-content.card-purple .stark-side-close {
+            border-color: rgba(168, 85, 247, 0.5);
+            color: #a855f7;
+        }
+
+        /* Side panel content layout */
+        .stark-side-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .stark-side-image {
             position: relative;
-            height: 280px;
+            height: 200px;
             overflow: hidden;
             border: 1px solid rgba(0, 243, 255, 0.3);
+            border-radius: 8px;
         }
 
-        .stark-expanded-image img {
+        .stark-side-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1300,237 +1409,116 @@
             padding: 0.25rem 0.5rem;
             background: rgba(0, 0, 0, 0.8);
             border: 1px solid rgba(0, 243, 255, 0.3);
+            border-radius: 4px;
         }
 
-        .stark-expanded-info {
+        .stark-side-info {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            gap: 0.75rem;
         }
 
-        .stark-close-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 243, 255, 0.1);
-            border: 1px solid rgba(0, 243, 255, 0.4);
-            color: #00f3ff;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 10;
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .stark-stack-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .stark-detail-panel {
+                order: 2;
+                min-height: auto;
+            }
+
+            .stark-stack-wrapper {
+                order: 1;
+                height: 450px;
+            }
+
+            .stark-stack-file {
+                width: 320px;
+            }
         }
 
-        .stark-close-btn:hover {
-            background: rgba(0, 243, 255, 0.2);
-            transform: rotate(90deg);
-        }
+        @media (max-width: 640px) {
+            .stark-stack-file {
+                width: 280px;
+            }
 
-        .stark-close-btn.btn-close-red {
-            border-color: rgba(255, 85, 85, 0.4);
-            color: #ff5555;
-        }
-
-        .stark-close-btn.btn-close-green {
-            border-color: rgba(74, 222, 128, 0.4);
-            color: #4ade80;
-        }
-
-        .stark-close-btn.btn-close-yellow {
-            border-color: rgba(250, 204, 21, 0.4);
-            color: #facc15;
-        }
-
-        .stark-close-btn.btn-close-purple {
-            border-color: rgba(168, 85, 247, 0.4);
-            color: #a855f7;
-        }
-
-        /* Backdrop */
-        .stark-backdrop {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 10, 20, 0.75);
-            backdrop-filter: blur(8px);
-            z-index: 999;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-        }
-
-        .stark-backdrop.active {
-            opacity: 1;
-            visibility: visible;
+            .stark-side-tab {
+                width: 160px;
+                font-size: 9px;
+            }
         }
 
         .bracket-green {
             border-color: #4ade80 !important;
         }
 
-        /* Hide old grid styles when using stack */
-        .stark-stack-container .stark-file-grid {
-            display: none;
-        }
-
-        /* NEW OVERLAY CARD - Appended to body, escapes 3D transforms */
-        .stark-overlay-card {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.9);
-            width: 90%;
-            max-width: 950px;
-            z-index: 1001;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .stark-overlay-card.active {
-            opacity: 1;
-            visibility: visible;
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        .stark-overlay-content {
-            background: linear-gradient(180deg,
-                    #0f2847 0%,
-                    #122d4f 10%,
-                    #153458 50%,
-                    #183a60 100%);
-            border: 3px solid rgba(0, 243, 255, 0.9);
-            border-radius: 0 0 12px 12px;
-            border-top: none;
-            padding: 2.5rem;
-            padding-top: 2rem;
+        /* Audio Controller */
+        .music-toggle {
             position: relative;
-            box-shadow:
-                0 25px 100px rgba(0, 0, 0, 0.9),
-                0 0 80px rgba(0, 243, 255, 0.6),
-                inset 0 0 100px rgba(0, 243, 255, 0.1);
-        }
-
-        .stark-overlay-content.card-red {
-            border-color: rgba(255, 85, 85, 0.9);
-            box-shadow:
-                0 25px 100px rgba(0, 0, 0, 0.9),
-                0 0 80px rgba(255, 85, 85, 0.6);
-        }
-
-        .stark-overlay-content.card-green {
-            border-color: rgba(74, 222, 128, 0.9);
-            box-shadow:
-                0 25px 100px rgba(0, 0, 0, 0.9),
-                0 0 80px rgba(74, 222, 128, 0.5);
-        }
-
-        .stark-overlay-content.card-yellow {
-            border-color: rgba(250, 204, 21, 0.9);
-            box-shadow:
-                0 25px 100px rgba(0, 0, 0, 0.9),
-                0 0 80px rgba(250, 204, 21, 0.5);
-        }
-
-        .stark-overlay-content.card-purple {
-            border-color: rgba(168, 85, 247, 0.9);
-            box-shadow:
-                0 25px 100px rgba(0, 0, 0, 0.9),
-                0 0 80px rgba(168, 85, 247, 0.5);
-        }
-
-        /* Folder Tab for Overlay */
-        .stark-folder-tab {
-            position: absolute;
-            top: -42px;
-            left: 20px;
-            width: 220px;
-            height: 45px;
-            background: linear-gradient(180deg, #153458 0%, #0f2847 100%);
-            border: 3px solid rgba(0, 243, 255, 0.9);
-            border-bottom: none;
-            border-radius: 12px 12px 0 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 12px;
-            font-family: 'Space Mono', monospace;
-            color: #00f3ff;
-            letter-spacing: 1px;
-            text-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
-        }
-
-        .stark-overlay-content.card-red .stark-folder-tab,
-        .card-red~.stark-folder-tab {
-            border-color: rgba(255, 85, 85, 0.9);
-            color: #ff5555;
-            text-shadow: 0 0 15px rgba(255, 85, 85, 0.7);
-        }
-
-        .stark-overlay-content.card-green .stark-folder-tab {
-            border-color: rgba(74, 222, 128, 0.9);
-            color: #4ade80;
-        }
-
-        .stark-overlay-content.card-yellow .stark-folder-tab {
-            border-color: rgba(250, 204, 21, 0.9);
-            color: #facc15;
-        }
-
-        .stark-overlay-content.card-purple .stark-folder-tab {
-            border-color: rgba(168, 85, 247, 0.9);
-            color: #a855f7;
-        }
-
-        /* Close button in overlay */
-        .stark-overlay-content .stark-close-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
             width: 44px;
             height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 243, 255, 0.15);
-            border: 2px solid rgba(0, 243, 255, 0.5);
-            color: #00f3ff;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            background: rgba(0, 243, 255, 0.05);
             cursor: pointer;
             transition: all 0.3s ease;
-            z-index: 10;
-            border-radius: 4px;
         }
 
-        .stark-overlay-content .stark-close-btn:hover {
-            background: rgba(0, 243, 255, 0.3);
-            transform: rotate(90deg);
-            box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+        .music-toggle.playing {
+            border-color: #ff1744;
+            background: rgba(255, 23, 68, 0.1);
+            box-shadow: 0 0 15px rgba(255, 23, 68, 0.3);
         }
 
-        /* Grid layout for overlay content */
-        .stark-overlay-content .stark-expanded-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+        .music-toggle .pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #ff1744;
+            opacity: 0;
+            z-index: -1;
         }
 
-        @media (max-width: 768px) {
-            .stark-overlay-card {
-                width: 95%;
-                max-width: none;
+        .music-toggle.playing .pulse {
+            animation: musicPulse 2s infinite;
+        }
+
+        @keyframes musicPulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
             }
 
-            .stark-overlay-content .stark-expanded-content {
-                grid-template-columns: 1fr;
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
             }
+        }
 
-            .stark-folder-tab {
-                width: 180px;
-                font-size: 10px;
-            }
+        .audio-status {
+            position: absolute;
+            right: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: #00f3ff;
+            letter-spacing: 2px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .music-toggle:hover .audio-status {
+            opacity: 1;
         }
     </style>
 </head>
@@ -1540,6 +1528,16 @@
     <!-- Floating Navigation -->
     <nav class="floating-nav hidden lg:block">
         <div class="flex flex-col items-center">
+            <!-- Audio Control (Tactical Toggle) -->
+            <div class="relative flex items-center">
+                <div class="audio-status">THEME SIGNAL</div>
+                <button id="themeToggle" class="music-toggle" title="Toggle Theme Signal">
+                    <div class="pulse"></div>
+                    <i data-lucide="music" id="musicIcon" class="w-5 h-5 text-tech-blue"></i>
+                </button>
+            </div>
+
+            <div class="h-8 w-px bg-white/10 hidden md:block"></div>
             <a href="#home" class="nav-icon active" data-section="home">
                 <i data-lucide="home" class="w-5 h-5 text-tech-blue"></i>
                 <span class="nav-tooltip">HQ</span>
@@ -1566,49 +1564,158 @@
             </a>
         </div>
     </nav>
+    <!-- Quick Access HUD - Top Right -->
+    <div class="hidden lg:flex fixed top-6 right-6 z-50 flex-col gap-3 items-end">
 
-    <!-- Agent Info Panel - Top Right -->
-    <div class="hidden lg:block fixed top-6 right-6 z-50">
-        <div class="bg-black/80 backdrop-blur-xl border border-tech-blue/30 p-4 min-w-[280px]"
-            style="clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);">
-            <div class="flex items-center gap-3 mb-3">
-                <div class="relative w-12 h-12">
-                    <div class="absolute inset-0 rounded-full border-2 border-tech-blue animate-pulse"
-                        style="box-shadow: 0 0 15px rgba(0, 217, 255, 0.5);"></div>
-                    <img src="https://avatars.githubusercontent.com/u/176610466?v=4" alt="Agent MKS"
-                        class="absolute inset-1 rounded-full object-cover">
-                    <div class="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-green-400 border-2 border-black"
-                        style="box-shadow: 0 0 8px #4ade80;"></div>
-                </div>
-                <div class="flex-1">
-                    <p class="text-[8px] font-mono text-gray-500 tracking-wider">AGENT ID</p>
-                    <h3 class="text-sm font-heading font-bold text-tech-blue"
-                        style="text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);">MKS-2409</h3>
-                    <p class="text-[10px] text-white">Krishna Srinivas</p>
-                </div>
+        <!-- Identity & Neural Links Module -->
+        <div class="group relative">
+            <div
+                class="absolute -inset-0.5 bg-gradient-to-r from-tech-blue/20 to-purple-500/20 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-700">
             </div>
-            <div class="flex items-center justify-between text-[9px] font-mono">
-                <span class="text-gray-500">STATUS</span>
-                <span class="text-green-400 flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
-                    ACTIVE
-                </span>
-            </div>
-            <div class="mt-2 pt-2 border-t border-tech-blue/20 flex gap-2">
-                <a href="https://github.com/KrishnaSrinivas-24" target="_blank"
-                    class="flex-1 border border-gray-700 hover:border-tech-blue bg-black/40 hover:bg-tech-blue/10 p-2 flex items-center justify-center transition-all">
-                    <i data-lucide="github" class="w-4 h-4 text-gray-400 hover:text-tech-blue"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/krishnasrinivas-" target="_blank"
-                    class="flex-1 border border-gray-700 hover:border-tech-blue bg-black/40 hover:bg-tech-blue/10 p-2 flex items-center justify-center transition-all">
-                    <i data-lucide="linkedin" class="w-4 h-4 text-gray-400 hover:text-tech-blue"></i>
-                </a>
-                <a href="https://x.com/krishna240905" target="_blank"
-                    class="flex-1 border border-gray-700 hover:border-tech-blue bg-black/40 hover:bg-tech-blue/10 p-2 flex items-center justify-center transition-all">
-                    <i data-lucide="twitter" class="w-4 h-4 text-gray-400 hover:text-tech-blue"></i>
-                </a>
+            <div
+                class="relative flex items-center gap-4 bg-black/40 backdrop-blur-xl border border-white/10 p-1.5 pl-2 pr-4 rounded-full shadow-2xl hover:border-tech-blue/30 transition-all duration-300">
+
+                <!-- Avatar & ID -->
+                <div class="flex items-center gap-3">
+                    <div class="relative w-10 h-10">
+                        <div
+                            class="absolute inset-0 rounded-full bg-gradient-to-r from-tech-blue to-purple-500 animate-spin-slow opacity-70">
+                        </div>
+                        <img src="https://avatars.githubusercontent.com/u/176610466?v=4" alt="MKS"
+                            class="absolute inset-0.5 rounded-full object-cover border-2 border-black">
+                        <div
+                            class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 border-2 border-black rounded-full shadow-[0_0_8px_#4ade80]">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[10px] font-mono text-gray-400 tracking-wider">AGENT ID</span>
+                        <span class="text-xs font-bold font-heading text-white">MKS-2409</span>
+                    </div>
+                </div>
+
+                <!-- Vertical Divider -->
+                <div class="w-px h-6 bg-white/10"></div>
+
+                <!-- Neural Links (Socials) -->
+                <div class="flex items-center gap-2">
+                    <a href="https://github.com/KrishnaSrinivas-24" target="_blank"
+                        class="p-2 rounded-full hover:bg-white/5 text-gray-400 hover:text-white transition-colors relative group/icon"
+                        title="GitHub Protocol">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        <span
+                            class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/90 text-white text-[9px] px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap border border-white/10">Access
+                            Repo</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/krishnasrinivas-" target="_blank"
+                        class="p-2 rounded-full hover:bg-white/5 text-gray-400 hover:text-blue-400 transition-colors relative group/icon"
+                        title="Neural Net">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        <span
+                            class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/90 text-white text-[9px] px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap border border-white/10">Connect
+                            Link</span>
+                    </a>
+                    <a href="https://x.com/krishna240905" target="_blank"
+                        class="p-2 rounded-full hover:bg-white/5 text-gray-400 hover:text-sky-400 transition-colors relative group/icon"
+                        title="Comms">
+                        <i data-lucide="twitter" class="w-4 h-4"></i>
+                        <span
+                            class="absolute -top-8 left-1/2 -translate-x-1/2 bg-black/90 text-white text-[9px] px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap border border-white/10">Signal</span>
+                    </a>
+                </div>
             </div>
         </div>
+
+        <!-- Live Activity Pill (The improved widget) -->
+        <a href="#projects" class="group relative block w-full max-w-[280px]">
+            <!-- Hover Glow -->
+            <div
+                class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-tech-blue to-purple-600 rounded-2xl opacity-30 blur-md group-hover:opacity-75 transition duration-500 animate-gradient-xy">
+            </div>
+
+            <div
+                class="relative bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl p-3 flex items-center gap-3 overflow-hidden group-hover:border-purple-500/30 transition-all duration-300">
+                <!-- Background Pulse -->
+                <div
+                    class="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+
+                <!-- Visualizer Icon -->
+                <div
+                    class="relative w-10 h-10 flex-shrink-0 bg-gradient-to-br from-purple-900/50 to-blue-900/50 rounded-lg flex items-center justify-center border border-white/5 overflow-hidden">
+                    <div class="flex gap-0.5 items-end h-5 pb-1">
+                        <div class="w-1 bg-purple-400 rounded-sm animate-[music_1s_ease-in-out_infinite]"
+                            style="animation-delay: 0s"></div>
+                        <div class="w-1 bg-tech-blue rounded-sm animate-[music_1.2s_ease-in-out_infinite]"
+                            style="animation-delay: 0.1s"></div>
+                        <div class="w-1 bg-purple-400 rounded-sm animate-[music_0.8s_ease-in-out_infinite]"
+                            style="animation-delay: 0.2s"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                    <div class="flex items-center gap-2 mb-0.5">
+                        <span class="text-[9px] font-mono text-purple-300 tracking-wider">BUILDING</span>
+                        <span class="w-1 h-1 rounded-full bg-purple-400 animate-ping"></span>
+                    </div>
+                    <div class="text-xs font-bold text-white truncate group-hover:text-purple-200 transition-colors">
+                        J.A.R.V.I.S. System</div>
+                    <div class="text-[9px] text-gray-500 truncate font-mono">Multi-Agent Core v2.0</div>
+                </div>
+
+                <div class="text-gray-600 group-hover:text-purple-400 transition-all group-hover:translate-x-1">
+                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </div>
+            </div>
+        </a>
+
+        <style>
+            @keyframes music {
+
+                0%,
+                100% {
+                    height: 40%;
+                    opacity: 0.5;
+                }
+
+                50% {
+                    height: 100%;
+                    opacity: 1;
+                }
+            }
+
+            .animate-gradient-xy {
+                animation: gradient-xy 3s ease infinite;
+                background-size: 200% 200%;
+            }
+
+            @keyframes gradient-xy {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .animate-spin-slow {
+                animation: spin 3s linear infinite;
+            }
+
+            @keyframes scanVertical {
+                0% {
+                    transform: translateY(-100%);
+                }
+
+                100% {
+                    transform: translateY(200%);
+                }
+            }
+        </style>
     </div>
 
     <!-- Classification Banner - Top Left -->
@@ -1721,12 +1828,28 @@
                                 <div class="absolute inset-12 rounded-full border-2 border-tech-blue overflow-hidden"
                                     style="background: radial-gradient(circle at center, rgba(0, 243, 255, 0.1), rgba(5, 5, 5, 0.95)); box-shadow: inset 0 0 60px rgba(0, 243, 255, 0.3), 0 0 40px rgba(0, 243, 255, 0.2);">
                                     <!-- Initials Display -->
-                                    <div class="w-full h-full flex items-center justify-center">
-                                        <div class="text-center">
-                                            <h2 class="text-6xl font-heading font-bold text-tech-blue mb-2"
-                                                style="text-shadow: 0 0 30px rgba(0, 243, 255, 0.8);">MKS</h2>
-                                            <div class="h-px w-20 mx-auto bg-tech-blue/50 mb-2"></div>
-                                            <p class="text-xs font-mono text-gray-400 tracking-widest">ID: MKS-2409</p>
+                                    <!-- User Image -->
+                                    <div
+                                        class="w-full h-full flex items-center justify-center relative group/profile cursor-crosshair">
+                                        <img src="https://avatars.githubusercontent.com/u/176610466?v=4" alt="Krishna"
+                                            class="w-full h-full object-cover opacity-80 group-hover/profile:opacity-100 transition-opacity duration-500 scale-110">
+
+                                        <!-- Hover Overlay with ID -->
+                                        <div
+                                            class="absolute inset-0 bg-tech-blue/20 backdrop-blur-[2px] opacity-0 group-hover/profile:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                            <div
+                                                class="text-center transform translate-y-4 group-hover/profile:translate-y-0 transition-transform duration-300">
+                                                <p class="text-[10px] font-mono text-white tracking-[0.4em] font-bold">
+                                                    MKS-2409</p>
+                                                <div
+                                                    class="h-px w-12 mx-auto bg-tech-blue shadow-[0_0_10px_#00f3ff] mt-1">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Scanning line -->
+                                        <div
+                                            class="absolute top-0 left-0 w-full h-[15%] bg-gradient-to-b from-transparent via-tech-blue/40 to-transparent border-b border-tech-blue/50 animate-[scanVertical_4s_linear_infinite] pointer-events-none">
                                         </div>
                                     </div>
                                 </div>
@@ -1915,13 +2038,13 @@
                     <div class="space-y-8">
                         <!-- Classification Banner -->
                         <div class="border border-hot-red bg-hot-red/10 p-4">
-                            <p class="text-xs font-mono text-hot-red text-center tracking-widest">★ EXCEPTIONAL
-                                INDIVIDUAL ★</p>
+                            <p class="text-xs font-mono text-hot-red text-center tracking-widest">â˜… EXCEPTIONAL
+                                INDIVIDUAL â˜…</p>
                         </div>
 
                         <div class="space-y-6 text-gray-300 leading-relaxed">
                             <p class="text-sm font-mono text-tech-blue border-b border-tech-blue/30 pb-2">
-                                ◆ MY STORY
+                                â—† MY STORY
                             </p>
                             <p>
                                 I'm <strong class="text-white">KRISHNA SRINIVAS</strong>, a
@@ -1934,35 +2057,39 @@
                                     class="text-hot-red font-medium">actually make a difference</span>.
                             </p>
                             <p>
-                                I love <span class="text-white font-medium">solving problems</span> — whether it's
+                                I love <span class="text-white font-medium">solving problems</span> â€” whether it's
                                 building AI systems, crafting full-stack apps, or turning crazy ideas into working
                                 projects. <strong class="text-white">The journey is as exciting as the
                                     destination.</strong>
                             </p>
                             <p class="text-sm italic text-gray-500 border-l-2 border-tech-blue/50 pl-4">
-                                "Not just building systems. Building the future." — Krishna Srinivas
+                                "Not just building systems. Building the future." â€” Krishna Srinivas
                             </p>
                         </div>
 
                         <!-- Stats Grid -->
                         <div class="grid grid-cols-2 gap-6 pt-4">
-                            <div class="border border-tech-blue/30 bg-black/40 p-4">
+                            <div
+                                class="border border-tech-blue/30 bg-black/40 p-4 flex flex-col items-center justify-center text-center">
                                 <h4 class="text-3xl font-heading font-bold text-tech-blue mb-1">15+</h4>
                                 <p class="text-[10px] font-mono text-gray-400 uppercase tracking-wider">Missions
                                     Completed</p>
                             </div>
-                            <div class="border border-tech-blue/30 bg-black/40 p-4">
-                                <h4 class="text-2xl font-heading font-bold text-green-400 mb-1">🏆</h4>
+                            <div
+                                class="border border-tech-blue/30 bg-black/40 p-4 flex flex-col items-center justify-center text-center">
+                                <i data-lucide="trophy" class="w-8 h-8 text-green-400 mb-2"></i>
                                 <p class="text-[10px] font-mono text-gray-400 uppercase tracking-wider">Google Cloud
                                     Arcade Champion</p>
                             </div>
-                            <div class="border border-tech-blue/30 bg-black/40 p-4">
+                            <div
+                                class="border border-tech-blue/30 bg-black/40 p-4 flex flex-col items-center justify-center text-center">
                                 <h4 class="text-3xl font-heading font-bold text-white mb-1">AI</h4>
                                 <p class="text-[10px] font-mono text-gray-400 uppercase tracking-wider">Specialization
                                 </p>
                             </div>
-                            <div class="border border-tech-blue/30 bg-black/40 p-4">
-                                <h4 class="text-3xl font-heading font-bold text-hot-red mb-1">∞</h4>
+                            <div
+                                class="border border-tech-blue/30 bg-black/40 p-4 flex flex-col items-center justify-center text-center">
+                                <i data-lucide="infinity" class="w-8 h-8 text-hot-red mb-2"></i>
                                 <p class="text-[10px] font-mono text-gray-400 uppercase tracking-wider">Impact Potential
                                 </p>
                             </div>
@@ -1972,7 +2099,7 @@
                     <!-- Right: Capabilities -->
                     <div class="space-y-6">
                         <p class="text-sm font-mono text-tech-blue border-b border-tech-blue/30 pb-2">
-                            ◆ WHAT I DO
+                            â—† WHAT I DO
                         </p>
 
                         <div class="space-y-4">
@@ -2069,370 +2196,86 @@
                         MISSION <span class="text-tech-blue"
                             style="text-shadow: 0 0 30px rgba(0, 243, 255, 0.5);">ARCHIVE</span>
                     </h2>
-                    <p class="text-sm font-mono text-gray-400">Click on a file to access // Declassified Operations</p>
+                    <p class="text-sm font-mono text-gray-400">Select a category folder // Browse classified operations
+                    </p>
                 </div>
 
-                <!-- Backdrop for expanded cards -->
-                <div class="stark-backdrop" id="starkBackdrop" onclick="closeStarkFile()"></div>
 
-                <!-- 3D Stacked File Container -->
-                <div class="stark-stack-container" id="starkStack">
-                    <div class="stark-stack-wrapper">
+                <!-- Category-Based File System -->
+                <div class="category-file-system" id="categorySystem">
 
-                        <!-- File 1: FLOATCHAT -->
-                        <div class="stark-stack-file" data-index="0" data-repo="FLOATCHAT"
-                            onclick="openStarkFile(this)">
-                            <div class="stark-stack-card">
-                                <div class="stark-collapsed-view">
-                                    <div class="stark-file-label">
-                                        <div class="w-4 h-4 bg-tech-blue mr-3"></div>
-                                        <div>
-                                            <span class="text-[10px] font-mono text-gray-500 block">CONFIDENTIAL</span>
-                                            <span class="text-lg font-heading font-bold text-white">FLOATCHAT</span>
-                                        </div>
+                    <!-- Left Panel - Project Details -->
+                    <div class="category-detail-panel" id="categoryDetailPanel">
+                        <!-- Projects list will be populated here -->
+                        <div class="category-projects-list" id="projectsList"></div>
+
+                        <!-- Project Detail View -->
+                        <div class="project-detail-view" id="projectDetailView"></div>
+                    </div>
+
+                    <!-- Right Panel - Category Folders -->
+                    <div class="category-folders-wrapper">
+                        <div class="category-folders-stack">
+
+                            <!-- Category 1: AI -->
+                            <div class="category-folder" data-category="ai" data-index="0" onclick="openCategory(this)">
+                                <div class="category-folder-card category-cyan">
+                                    <div class="category-icon">
+                                        <img src="presets/ai_folder.png" alt="AI">
                                     </div>
-                                    <span class="text-[10px] font-mono text-tech-blue">SECTOR_001</span>
-                                </div>
-                                <div class="stark-expanded-view">
-                                    <button class="stark-close-btn"
-                                        onclick="event.stopPropagation(); closeStarkFile();">
-                                        <i data-lucide="x" class="w-5 h-5"></i>
-                                    </button>
-                                    <div class="stark-expanded-content">
-                                        <div class="stark-expanded-image">
-                                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800"
-                                                alt="FLOATCHAT">
-                                            <div class="stark-image-overlay"></div>
-                                            <div class="stark-image-label"><span
-                                                    class="text-[10px] font-mono text-tech-blue">SYS.VER.1.0</span>
-                                            </div>
-                                        </div>
-                                        <div class="stark-expanded-info">
-                                            <div class="flex items-center gap-2 mb-2">
-                                                <div class="w-3 h-3 rounded-sm bg-tech-blue"></div>
-                                                <span
-                                                    class="text-[10px] font-mono text-tech-blue tracking-widest">CONFIDENTIAL</span>
-                                            </div>
-                                            <h3 class="text-3xl font-heading font-bold text-white mb-1">FLOATCHAT</h3>
-                                            <p class="text-[11px] font-mono text-tech-blue tracking-wider mb-4">
-                                                TypeScript // React // RAG</p>
-                                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
-                                                Advanced RAG text-to-SQL platform for ocean data analysis. Real-time
-                                                visualization engine.
-                                            </p>
-                                            <div class="flex flex-wrap gap-2 mb-4">
-                                                <span class="stark-tag tag-cyan">SQL-CORE</span>
-                                                <span class="stark-tag tag-red">LIVE</span>
-                                            </div>
-                                            <a href="https://github.com/KrishnaSrinivas-24/FLOATCHAT" target="_blank"
-                                                class="stark-access-btn" onclick="event.stopPropagation();">
-                                                ACCESS FILE <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
-                                            </a>
-                                        </div>
+                                    <div class="category-info">
+                                        <span class="category-label">SECTOR_AI</span>
+                                        <span class="category-name">ARTIFICIAL INTELLIGENCE</span>
+                                        <span class="category-count">3 FILES</span>
                                     </div>
                                 </div>
-                                <div class="corner-bracket top-left"></div>
-                                <div class="corner-bracket top-right"></div>
-                                <div class="corner-bracket bottom-left"></div>
-                                <div class="corner-bracket bottom-right"></div>
                             </div>
-                        </div>
 
-                        <!-- File 2: JARVIS -->
-                        <div class="stark-stack-file" data-index="1" data-repo="JARVIS" onclick="openStarkFile(this)">
-                            <div class="stark-stack-card card-red">
-                                <div class="stark-collapsed-view">
-                                    <div class="stark-file-label">
-                                        <div class="w-4 h-4 bg-hot-red mr-3 animate-pulse"></div>
-                                        <div>
-                                            <span class="text-[10px] font-mono text-gray-500 block">TOP SECRET</span>
-                                            <span class="text-lg font-heading font-bold text-white">J.A.R.V.I.S.</span>
-                                        </div>
+                            <!-- Category 2: ML -->
+                            <div class="category-folder" data-category="ml" data-index="1" onclick="openCategory(this)">
+                                <div class="category-folder-card category-yellow">
+                                    <div class="category-icon">
+                                        <img src="presets/ml_folder.png" alt="ML">
                                     </div>
-                                    <span class="text-[10px] font-mono text-hot-red">SECTOR_AI</span>
-                                </div>
-                                <div class="stark-expanded-view">
-                                    <button class="stark-close-btn btn-close-red"
-                                        onclick="event.stopPropagation(); closeStarkFile();">
-                                        <i data-lucide="x" class="w-5 h-5"></i>
-                                    </button>
-                                    <div class="stark-expanded-content">
-                                        <div class="stark-expanded-image">
-                                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800"
-                                                alt="JARVIS">
-                                            <div class="stark-image-overlay overlay-red"></div>
-                                            <div class="stark-image-label"><span
-                                                    class="text-[10px] font-mono text-hot-red">AI.AGENT</span></div>
-                                        </div>
-                                        <div class="stark-expanded-info">
-                                            <div class="flex items-center gap-2 mb-2">
-                                                <div class="w-3 h-3 rounded-sm bg-hot-red animate-pulse"></div>
-                                                <span class="text-[10px] font-mono text-hot-red tracking-widest">TOP
-                                                    SECRET</span>
-                                            </div>
-                                            <h3 class="text-3xl font-heading font-bold text-white mb-1">J.A.R.V.I.S.
-                                            </h3>
-                                            <p class="text-[11px] font-mono text-hot-red tracking-wider mb-4">Python //
-                                                Multi-Agent // LLM</p>
-                                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
-                                                Autonomous agent framework capable of self-directed task execution and
-                                                reasoning.
-                                            </p>
-                                            <div class="flex flex-wrap gap-2 mb-4">
-                                                <span class="stark-tag tag-red">NEURAL</span>
-                                                <span class="stark-tag tag-purple">BETA</span>
-                                            </div>
-                                            <a href="https://github.com/KrishnaSrinivas-24/JARVIS" target="_blank"
-                                                class="stark-access-btn btn-red" onclick="event.stopPropagation();">
-                                                INITIATE <i data-lucide="zap" class="w-3 h-3 ml-1"></i>
-                                            </a>
-                                        </div>
+                                    <div class="category-info">
+                                        <span class="category-label">SECTOR_ML</span>
+                                        <span class="category-name">MACHINE LEARNING</span>
+                                        <span class="category-count">3 FILES</span>
                                     </div>
                                 </div>
-                                <div class="corner-bracket top-left bracket-red"></div>
-                                <div class="corner-bracket top-right bracket-red"></div>
-                                <div class="corner-bracket bottom-left bracket-red"></div>
-                                <div class="corner-bracket bottom-right bracket-red"></div>
                             </div>
-                        </div>
 
-                        <!-- File 3: LearnMate -->
-                        <div class="stark-stack-file" data-index="2" data-repo="LearnMate"
-                            onclick="openStarkFile(this)">
-                            <div class="stark-stack-card card-green">
-                                <div class="stark-collapsed-view">
-                                    <div class="stark-file-label">
-                                        <div class="w-4 h-4 bg-green-400 mr-3"></div>
-                                        <div>
-                                            <span class="text-[10px] font-mono text-gray-500 block">ACTIVE
-                                                PROJECT</span>
-                                            <span class="text-lg font-heading font-bold text-white">LearnMate</span>
-                                        </div>
+                            <!-- Category 3: Full Stack -->
+                            <div class="category-folder" data-category="fullstack" data-index="2"
+                                onclick="openCategory(this)">
+                                <div class="category-folder-card category-purple">
+                                    <div class="category-icon">
+                                        <img src="presets/fullstack_folder.png" alt="Full Stack">
                                     </div>
-                                    <span class="text-[10px] font-mono text-green-400">SECTOR_EDU</span>
-                                </div>
-                                <div class="stark-expanded-view">
-                                    <button class="stark-close-btn btn-close-green"
-                                        onclick="event.stopPropagation(); closeStarkFile();">
-                                        <i data-lucide="x" class="w-5 h-5"></i>
-                                    </button>
-                                    <div class="stark-expanded-content">
-                                        <div class="stark-expanded-image">
-                                            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800"
-                                                alt="LearnMate">
-                                            <div class="stark-image-overlay overlay-green"></div>
-                                            <div class="stark-image-label"><span
-                                                    class="text-[10px] font-mono text-green-400">EDU.SYS</span></div>
-                                        </div>
-                                        <div class="stark-expanded-info">
-                                            <div class="flex items-center gap-2 mb-2">
-                                                <div class="w-3 h-3 rounded-sm bg-green-400"></div>
-                                                <span
-                                                    class="text-[10px] font-mono text-green-400 tracking-widest">ACTIVE
-                                                    PROJECT</span>
-                                            </div>
-                                            <h3 class="text-3xl font-heading font-bold text-white mb-1">LearnMate</h3>
-                                            <p class="text-[11px] font-mono text-tech-blue tracking-wider mb-4">Watsonx
-                                                // AI Tutor // JS</p>
-                                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
-                                                Adaptive learning system powered by IBM Watsonx. Personalized curriculum
-                                                generation.
-                                            </p>
-                                            <div class="flex flex-wrap gap-2 mb-4">
-                                                <span class="stark-tag tag-green">IBM</span>
-                                                <span class="stark-tag tag-cyan">WATSONX</span>
-                                            </div>
-                                            <a href="https://github.com/KrishnaSrinivas-24/LearnMate" target="_blank"
-                                                class="stark-access-btn" onclick="event.stopPropagation();">
-                                                VIEW SOURCE <i data-lucide="code" class="w-3 h-3 ml-1"></i>
-                                            </a>
-                                        </div>
+                                    <div class="category-info">
+                                        <span class="category-label">SECTOR_WEB</span>
+                                        <span class="category-name">FULL STACK APPS</span>
+                                        <span class="category-count">2 FILES</span>
                                     </div>
                                 </div>
-                                <div class="corner-bracket top-left bracket-green"></div>
-                                <div class="corner-bracket top-right bracket-green"></div>
-                                <div class="corner-bracket bottom-left bracket-green"></div>
-                                <div class="corner-bracket bottom-right bracket-green"></div>
                             </div>
-                        </div>
 
-                        <!-- File 4: Amazon ML -->
-                        <div class="stark-stack-file" data-index="3" data-repo="Amazon_ML"
-                            onclick="openStarkFile(this)">
-                            <div class="stark-stack-card card-yellow">
-                                <div class="stark-collapsed-view">
-                                    <div class="stark-file-label">
-                                        <div class="w-4 h-4 bg-yellow-400 mr-3"></div>
-                                        <div>
-                                            <span class="text-[10px] font-mono text-gray-500 block">COMPETITION</span>
-                                            <span class="text-lg font-heading font-bold text-white">Amazon ML</span>
-                                        </div>
+                            <!-- Category 4: Tools -->
+                            <div class="category-folder" data-category="tools" data-index="3"
+                                onclick="openCategory(this)">
+                                <div class="category-folder-card category-green">
+                                    <div class="category-icon">
+                                        <img src="presets/tools_folder.png" alt="Tools">
                                     </div>
-                                    <span class="text-[10px] font-mono text-yellow-400">SECTOR_ML</span>
-                                </div>
-                                <div class="stark-expanded-view">
-                                    <button class="stark-close-btn btn-close-yellow"
-                                        onclick="event.stopPropagation(); closeStarkFile();">
-                                        <i data-lucide="x" class="w-5 h-5"></i>
-                                    </button>
-                                    <div class="stark-expanded-content">
-                                        <div class="stark-expanded-image">
-                                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800"
-                                                alt="Amazon ML">
-                                            <div class="stark-image-overlay overlay-yellow"></div>
-                                            <div class="stark-image-label"><span
-                                                    class="text-[10px] font-mono text-yellow-400">ML.PIPELINE</span>
-                                            </div>
-                                        </div>
-                                        <div class="stark-expanded-info">
-                                            <div class="flex items-center gap-2 mb-2">
-                                                <div class="w-3 h-3 rounded-sm bg-yellow-400"></div>
-                                                <span
-                                                    class="text-[10px] font-mono text-yellow-400 tracking-widest">COMPETITION</span>
-                                            </div>
-                                            <h3 class="text-3xl font-heading font-bold text-white mb-1">Amazon ML</h3>
-                                            <p class="text-[11px] font-mono text-yellow-400 tracking-wider mb-4">Python
-                                                // Modeling // AWS</p>
-                                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
-                                                High-accuracy predictive model for the 2025 Amazon Machine Learning
-                                                Challenge.
-                                            </p>
-                                            <div class="flex flex-wrap gap-2 mb-4">
-                                                <span class="stark-tag tag-yellow">COMP</span>
-                                                <span class="stark-tag tag-cyan">AWS</span>
-                                            </div>
-                                            <a href="https://github.com/KrishnaSrinivas-24/Amazon_ML-Challenge_2025"
-                                                target="_blank" class="stark-access-btn btn-yellow"
-                                                onclick="event.stopPropagation();">
-                                                ANALYZE <i data-lucide="bar-chart-2" class="w-3 h-3 ml-1"></i>
-                                            </a>
-                                        </div>
+                                    <div class="category-info">
+                                        <span class="category-label">SECTOR_UTIL</span>
+                                        <span class="category-name">TOOLS & UTILITIES</span>
+                                        <span class="category-count">2 FILES</span>
                                     </div>
                                 </div>
-                                <div class="corner-bracket top-left bracket-yellow"></div>
-                                <div class="corner-bracket top-right bracket-yellow"></div>
-                                <div class="corner-bracket bottom-left bracket-yellow"></div>
-                                <div class="corner-bracket bottom-right bracket-yellow"></div>
                             </div>
-                        </div>
 
-                        <!-- File 5: Campus Pulse -->
-                        <div class="stark-stack-file" data-index="4" data-repo="CAMPUS-PULSE"
-                            onclick="openStarkFile(this)">
-                            <div class="stark-stack-card card-purple">
-                                <div class="stark-collapsed-view">
-                                    <div class="stark-file-label">
-                                        <div class="w-4 h-4 bg-purple-400 mr-3"></div>
-                                        <div>
-                                            <span class="text-[10px] font-mono text-gray-500 block">NETWORK NODE</span>
-                                            <span class="text-lg font-heading font-bold text-white">Campus Pulse</span>
-                                        </div>
-                                    </div>
-                                    <span class="text-[10px] font-mono text-purple-400">SECTOR_SOC</span>
-                                </div>
-                                <div class="stark-expanded-view">
-                                    <button class="stark-close-btn btn-close-purple"
-                                        onclick="event.stopPropagation(); closeStarkFile();">
-                                        <i data-lucide="x" class="w-5 h-5"></i>
-                                    </button>
-                                    <div class="stark-expanded-content">
-                                        <div class="stark-expanded-image">
-                                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800"
-                                                alt="Campus Pulse">
-                                            <div class="stark-image-overlay overlay-purple"></div>
-                                            <div class="stark-image-label"><span
-                                                    class="text-[10px] font-mono text-purple-400">SOC.NET</span></div>
-                                        </div>
-                                        <div class="stark-expanded-info">
-                                            <div class="flex items-center gap-2 mb-2">
-                                                <div class="w-3 h-3 rounded-sm bg-purple-400"></div>
-                                                <span
-                                                    class="text-[10px] font-mono text-purple-400 tracking-widest">NETWORK
-                                                    NODE</span>
-                                            </div>
-                                            <h3 class="text-3xl font-heading font-bold text-white mb-1">Campus Pulse
-                                            </h3>
-                                            <p class="text-[11px] font-mono text-purple-400 tracking-wider mb-4">Full
-                                                Stack // Real-time</p>
-                                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
-                                                Centralized event communication node for university ecosystems.
-                                            </p>
-                                            <div class="flex flex-wrap gap-2 mb-4">
-                                                <span class="stark-tag tag-purple">NODE</span>
-                                                <span class="stark-tag tag-cyan">REALTIME</span>
-                                            </div>
-                                            <a href="https://github.com/KrishnaSrinivas-24/CAMPUS-PULSE" target="_blank"
-                                                class="stark-access-btn btn-purple" onclick="event.stopPropagation();">
-                                                CONNECT <i data-lucide="wifi" class="w-3 h-3 ml-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="corner-bracket top-left bracket-purple"></div>
-                                <div class="corner-bracket top-right bracket-purple"></div>
-                                <div class="corner-bracket bottom-left bracket-purple"></div>
-                                <div class="corner-bracket bottom-right bracket-purple"></div>
-                            </div>
                         </div>
-
-                        <!-- File 6: Voice Notes -->
-                        <div class="stark-stack-file" data-index="5" data-repo="Projects" onclick="openStarkFile(this)">
-                            <div class="stark-stack-card">
-                                <div class="stark-collapsed-view">
-                                    <div class="stark-file-label">
-                                        <div class="w-4 h-4 bg-tech-blue mr-3"></div>
-                                        <div>
-                                            <span class="text-[10px] font-mono text-gray-500 block">UTILITY</span>
-                                            <span class="text-lg font-heading font-bold text-white">Voice Notes</span>
-                                        </div>
-                                    </div>
-                                    <span class="text-[10px] font-mono text-tech-blue">SECTOR_AUD</span>
-                                </div>
-                                <div class="stark-expanded-view">
-                                    <button class="stark-close-btn"
-                                        onclick="event.stopPropagation(); closeStarkFile();">
-                                        <i data-lucide="x" class="w-5 h-5"></i>
-                                    </button>
-                                    <div class="stark-expanded-content">
-                                        <div class="stark-expanded-image">
-                                            <img src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?q=80&w=800"
-                                                alt="Voice Notes">
-                                            <div class="stark-image-overlay"></div>
-                                            <div class="stark-image-label"><span
-                                                    class="text-[10px] font-mono text-tech-blue">AUDIO.PROC</span></div>
-                                        </div>
-                                        <div class="stark-expanded-info">
-                                            <div class="flex items-center gap-2 mb-2">
-                                                <div class="w-3 h-3 rounded-sm bg-tech-blue"></div>
-                                                <span
-                                                    class="text-[10px] font-mono text-tech-blue tracking-widest">UTILITY</span>
-                                            </div>
-                                            <h3 class="text-3xl font-heading font-bold text-white mb-1">Voice Notes</h3>
-                                            <p class="text-[11px] font-mono text-tech-blue tracking-wider mb-4">WebAudio
-                                                // STT // Local</p>
-                                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
-                                                Browser-based audio transcription interface. Zero-latency processing
-                                                pipeline.
-                                            </p>
-                                            <div class="flex flex-wrap gap-2 mb-4">
-                                                <span class="stark-tag tag-cyan">AUDIO</span>
-                                                <span class="stark-tag tag-green">BROWSER</span>
-                                            </div>
-                                            <a href="https://github.com/KrishnaSrinivas-24/Projects/tree/main/voice-note-taker"
-                                                target="_blank" class="stark-access-btn"
-                                                onclick="event.stopPropagation();">
-                                                RECORD <i data-lucide="mic" class="w-3 h-3 ml-1"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="corner-bracket top-left"></div>
-                                <div class="corner-bracket top-right"></div>
-                                <div class="corner-bracket bottom-left"></div>
-                                <div class="corner-bracket bottom-right"></div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -2594,67 +2437,213 @@
         </section>
 
         <!-- BLOG SECTION -->
-        <section id="blog" class="reveal py-32 px-6 bg-charcoal-light">
-            <div class="max-w-4xl mx-auto">
-                <div class="flex justify-between items-end mb-16 border-b border-border-subtle pb-6">
-                    <div>
-                        <p class="text-purple-400 font-mono text-xs tracking-widest uppercase mb-2">Neural Logs</p>
-                        <h2 class="text-3xl lg:text-4xl font-heading font-bold text-white">System <span
-                                class="text-purple-500">Updates</span></h2>
+        <section id="blog" class="reveal py-32 px-6 bg-charcoal-light relative overflow-hidden">
+            <!-- Background effect -->
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: radial-gradient(circle at 20% 50%, rgba(168, 85, 247, 0.3) 0%, transparent 50%);">
+            </div>
+
+            <div class="max-w-6xl mx-auto relative z-10">
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
+                    <div class="border-l-4 border-purple-500 pl-6">
+                        <p class="text-[10px] font-mono text-purple-400 tracking-widest mb-2">[CLASSIFIED TRANSMISSIONS]
+                        </p>
+                        <h2 class="text-4xl lg:text-5xl font-heading font-bold text-white mb-2">Intelligence <span
+                                class="text-purple-500">Reports</span></h2>
+                        <p class="text-sm font-mono text-gray-400">Insights, discoveries, and development journey</p>
                     </div>
-                    <div class="hidden md:block">
-                        <span class="text-xs font-mono text-gray-500">Admin Access Only</span>
+                    <div class="flex items-center gap-2 text-xs font-mono text-gray-500">
+                        <div class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></div>
+                        Live Feed Active
                     </div>
                 </div>
 
-                <div class="space-y-6">
-                    <!-- Log Entry 1 -->
-                    <div class="minimal-card p-8 group hover:border-purple-500/50 transition-all cursor-pointer"
+                <!-- Blog Cards Grid -->
+                <div class="grid md:grid-cols-2 gap-6">
+
+                    <!-- Blog Card 1 - Featured -->
+                    <div class="blog-card group bg-gradient-to-br from-charcoal to-black border border-purple-500/30 rounded-xl overflow-hidden hover:border-purple-500/60 transition-all duration-300 cursor-pointer md:col-span-2"
                         onclick="openLog('log-1')">
-                        <div class="flex flex-col md:flex-row gap-6 justify-between items-start">
-                            <div class="space-y-4 flex-1">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="px-2 py-1 bg-purple-500/10 text-purple-400 text-[10px] font-mono rounded border border-purple-500/20">SYSTEM</span>
-                                    <span class="text-xs text-gray-500 font-mono">DEC 24, 2025</span>
+                        <div class="flex flex-col lg:flex-row">
+                            <div class="lg:w-2/5 h-48 lg:h-auto relative overflow-hidden">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-purple-600 to-tech-blue flex items-center justify-center">
+                                    <div class="text-center">
+                                        <i data-lucide="brain" class="w-16 h-16 text-white/80 mx-auto mb-2"></i>
+                                        <p class="text-white/60 text-xs font-mono">AI SYSTEMS</p>
+                                    </div>
                                 </div>
-                                <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
-                                    System Architecture v2.0 Deployed</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">
-                                    Successfully migrated core portfolio infrastructure to a new high-performance stack.
-                                    Integrated real-time Discord presence monitoring and dynamic content rendering. The
-                                    system is now fully operational with enhanced visual fidelity.
-                                </p>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <div class="absolute top-4 left-4">
+                                    <span
+                                        class="px-3 py-1 bg-purple-500/90 text-white text-[10px] font-mono rounded-full tracking-wider">FEATURED</span>
+                                </div>
                             </div>
-                            <div class="hidden md:flex flex-col items-end gap-2">
-                                <i data-lucide="cpu"
-                                    class="w-6 h-6 text-gray-600 group-hover:text-purple-500 transition-colors"></i>
+                            <div class="lg:w-3/5 p-8">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <span
+                                        class="px-2 py-1 bg-purple-500/10 text-purple-400 text-[10px] font-mono rounded border border-purple-500/20">DEEP
+                                        DIVE</span>
+                                    <span class="text-xs text-gray-500 font-mono">JAN 10, 2026</span>
+                                </div>
+                                <h3
+                                    class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-3">
+                                    Building J.A.R.V.I.S.: Bridging Voice and System Intelligence
+                                </h3>
+                                <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                                    How I refactored O(N) command logic into O(1) mappings for an autonomous AI
+                                    assistant powered by Google Gemini. A deep dive into bridging NLP with system-level
+                                    automation.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div
+                                        class="flex items-center gap-2 text-purple-400 text-sm font-medium group-hover:gap-3 transition-all">
+                                        Read Full Report <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                    </div>
+                                    <span class="text-xs text-gray-600 font-mono">8 min read</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Log Entry 2 -->
-                    <div class="minimal-card p-8 group hover:border-purple-500/50 transition-all cursor-pointer"
+                    <!-- Blog Card 2 -->
+                    <div class="blog-card group bg-gradient-to-br from-charcoal to-black border border-blue-500/30 rounded-xl overflow-hidden hover:border-blue-500/60 transition-all duration-300 cursor-pointer"
                         onclick="openLog('log-2')">
-                        <div class="flex flex-col md:flex-row gap-6 justify-between items-start">
-                            <div class="space-y-4 flex-1">
-                                <div class="flex items-center gap-3">
-                                    <span
-                                        class="px-2 py-1 bg-blue-500/10 text-blue-400 text-[10px] font-mono rounded border border-blue-500/20">RESEARCH</span>
-                                    <span class="text-xs text-gray-500 font-mono">DEC 10, 2025</span>
+                        <div class="h-40 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i data-lucide="database" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                    <p class="text-white/60 text-xs font-mono">RAG SYSTEMS</p>
                                 </div>
-                                <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
-                                    Exploring Autonomous Agents</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">
-                                    Deep diving into multi-agent orchestration frameworks. Currently experimenting with
-                                    hierarchical planning structures for the J.A.R.V.I.S. project. Initial results show
-                                    promising improvements in task decomposition.
-                                </p>
                             </div>
-                            <div class="hidden md:flex flex-col items-end gap-2">
-                                <i data-lucide="bot"
-                                    class="w-6 h-6 text-gray-600 group-hover:text-blue-500 transition-colors"></i>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span
+                                    class="px-2 py-1 bg-blue-500/10 text-blue-400 text-[10px] font-mono rounded border border-blue-500/20">TECHNICAL</span>
+                                <span class="text-xs text-gray-500 font-mono">DEC 28, 2025</span>
                             </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors mb-2">
+                                Engineering the Future of EdTech with RAG Architectures
+                            </h3>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                                Solving LLM hallucinations with Retrieval-Augmented Generation. How I built LearnMate
+                                using IBM Watson for context-aware, personalized student tutoring.
+                            </p>
+                            <div class="flex items-center gap-2 text-blue-400 text-xs font-medium">
+                                Read More <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="blog-card group bg-gradient-to-br from-charcoal to-black border border-green-500/30 rounded-xl overflow-hidden hover:border-green-500/60 transition-all duration-300 cursor-pointer"
+                        onclick="openLog('log-3')">
+                        <div class="h-40 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-green-600 to-emerald-500 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i data-lucide="trophy" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                    <p class="text-white/60 text-xs font-mono">COMPETITION</p>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span
+                                    class="px-2 py-1 bg-green-500/10 text-green-400 text-[10px] font-mono rounded border border-green-500/20">ACHIEVEMENT</span>
+                                <span class="text-xs text-gray-500 font-mono">DEC 15, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-green-400 transition-colors mb-2">
+                                DevOps at Scale: Lessons from the Cloud Arcade
+                            </h3>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                                Automating CI/CD pipelines and container orchestration on GKE. A technical reflection on
+                                achieving Google Cloud Arcade Champion status through infrastructure as code.
+                            </p>
+                            <div class="flex items-center gap-2 text-green-400 text-xs font-medium">
+                                Read More <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 4 -->
+                    <div class="blog-card group bg-gradient-to-br from-charcoal to-black border border-yellow-500/30 rounded-xl overflow-hidden hover:border-yellow-500/60 transition-all duration-300 cursor-pointer"
+                        onclick="openLog('log-4')">
+                        <div class="h-40 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-yellow-600 to-orange-500 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i data-lucide="lightbulb" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                    <p class="text-white/60 text-xs font-mono">HACKATHON</p>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span
+                                    class="px-2 py-1 bg-yellow-500/10 text-yellow-400 text-[10px] font-mono rounded border border-yellow-500/20">EXPERIENCE</span>
+                                <span class="text-xs text-gray-500 font-mono">NOV 20, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-yellow-400 transition-colors mb-2">
+                                Smart India Hackathon: Building a Campus Nervous System
+                            </h3>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                                Leading a team of 6 to deploy CampusPulse in 36 hours. Overcoming real-time sync
+                                challenges using Next.js, React Native, and Firebase at scale.
+                            </p>
+                            <div class="flex items-center gap-2 text-yellow-400 text-xs font-medium">
+                                Read More <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 5 -->
+                    <div class="blog-card group bg-gradient-to-br from-charcoal to-black border border-tech-blue/30 rounded-xl overflow-hidden hover:border-tech-blue/60 transition-all duration-300 cursor-pointer"
+                        onclick="openLog('log-5')">
+                        <div class="h-40 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-tech-blue to-blue-600 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i data-lucide="rocket" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                    <p class="text-white/60 text-xs font-mono">PRODUCTIVITY</p>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span
+                                    class="px-2 py-1 bg-tech-blue/10 text-tech-blue text-[10px] font-mono rounded border border-tech-blue/20">TOOLS</span>
+                                <span class="text-xs text-gray-500 font-mono">NOV 5, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-tech-blue transition-colors mb-2">
+                                Auditing the Human Connection in an AI World
+                            </h3>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                                Engineering a TypeScript tool to audit AEO and humanization metrics. Preparing developer
+                                content for the transition from Search Engines to Answer Engines.
+                            </p>
+                            <div class="flex items-center gap-2 text-tech-blue text-xs font-medium">
+                                Read More <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Posts Link -->
+                <div class="mt-12 text-center">
+                    <p class="text-sm text-gray-500 font-mono mb-4">More transmissions incoming...</p>
+                    <div class="flex justify-center gap-2">
+                        <div class="w-2 h-2 rounded-full bg-purple-500/50 animate-pulse"></div>
+                        <div class="w-2 h-2 rounded-full bg-purple-500/50 animate-pulse" style="animation-delay: 0.2s;">
+                        </div>
+                        <div class="w-2 h-2 rounded-full bg-purple-500/50 animate-pulse" style="animation-delay: 0.4s;">
                         </div>
                     </div>
                 </div>
@@ -2742,31 +2731,143 @@
         // Blog Data & Modal Logic
         const blogData = {
             'log-1': {
-                title: "System Architecture v2.0 Deployed",
-                date: "DEC 24, 2025",
-                tag: "SYSTEM",
+                title: "Building J.A.R.V.I.S.: Bridging Voice and System Intelligence",
+                date: "JAN 10, 2026",
+                tag: "DEEP DIVE",
                 tagColor: "purple",
-                image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
+                image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=800&auto=format&fit=crop",
                 body: `
-                    <p>Successfully migrated core portfolio infrastructure to a new high-performance stack. This update introduces a completely rewritten frontend architecture using vanilla JavaScript for maximum performance, coupled with Tailwind CSS for rapid styling.</p>
-                    <p class="mt-4"><strong>Key Upgrades:</strong></p>
-                    <ul class="list-disc pl-5 mt-2 space-y-1">
-                        <li>Integrated real-time Discord presence monitoring via Lanyard API.</li>
-                        <li>Implemented dynamic content rendering for the blog section.</li>
-                        <li>Enhanced visual fidelity with glassmorphism and neon accents.</li>
-                        <li>Optimized asset loading for sub-100ms interaction times.</li>
-                    </ul>
+                    <div class="space-y-4">
+                        <p class="text-purple-400 font-mono text-xs uppercase tracking-widest">Core Mission: Autonomous Command Execution</p>
+                        <p>Built a bridge between natural language processing and low-level system execution. J.A.R.V.I.S. isn't just a chatbot; it's a voice-to-command engine utilizing Google Gemini AI to interpret complex intents and translate them into direct system actions.</p>
+                        
+                        <div class="bg-black/30 p-4 border-l-2 border-purple-500 rounded">
+                            <h4 class="text-white font-bold text-sm mb-2">Technical Breakthrough</h4>
+                            <p class="text-xs">Identified a critical performance bottleneck in the legacy command execution engine. Refactored the processing logic from a 200+ line <code class="bg-gray-800 px-1">if-elif</code> chain into an efficient <code class="bg-gray-800 px-1">O(1)</code> dictionary-based mapping system.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mt-4">
+                            <div class="border border-white/5 p-3 rounded bg-white/5">
+                                <p class="text-[10px] text-gray-500 font-mono mb-1">LATENCY REDUCTION</p>
+                                <p class="text-xl font-bold text-purple-400">40% Decrease</p>
+                            </div>
+                            <div class="border border-white/5 p-3 rounded bg-white/5">
+                                <p class="text-[10px] text-gray-500 font-mono mb-1">COMMAND SET</p>
+                                <p class="text-xl font-bold text-purple-400">50+ Scripts</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-sm">The platform now seamlessly automates developer workflows, from launching VS Code workspaces to managing network utilities and system diagnostic reports, all via natural voice modulation.</p>
+                    </div>
                 `
             },
             'log-2': {
-                title: "Exploring Autonomous Agents",
-                date: "DEC 10, 2025",
-                tag: "RESEARCH",
+                title: "Engineering the Future of EdTech with RAG Architectures",
+                date: "DEC 28, 2025",
+                tag: "TECHNICAL",
                 tagColor: "blue",
-                image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800&auto=format&fit=crop",
+                image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop",
                 body: `
-                    <p>Deep diving into multi-agent orchestration frameworks. Currently experimenting with hierarchical planning structures for the J.A.R.V.I.S. project.</p>
-                    <p class="mt-4">The goal is to create a system where a "Manager" agent decomposes high-level tasks into sub-tasks for specialized "Worker" agents. Initial tests with the CrewAI framework show promising results in code generation and automated debugging workflows.</p>
+                    <div class="space-y-4">
+                        <p class="text-blue-400 font-mono text-xs uppercase tracking-widest">Project: LearnMate AI Tutor</p>
+                        <p>Faced with the challenge of LLM hallucinations in educational contexts, I engineered LearnMate—a personalized AI Tutor grounded in Retrieval-Augmented Generation (RAG) principles.</p>
+                        
+                        <div class="bg-black/30 p-4 border-l-2 border-blue-500 rounded">
+                            <h4 class="text-white font-bold text-sm mb-2">Architectural Logic</h4>
+                            <p class="text-xs">Utilized IBM Watson AI to ingest and index official curriculum documentation. The RAG pipeline ensures that every tutoring response is cross-referenced with local knowledge vector stores before being presented to the student.</p>
+                        </div>
+                        
+                        <p class="text-sm">Key features implemented include:</p>
+                        <ul class="list-disc pl-5 text-xs space-y-2 text-gray-300">
+                            <li><strong>Dynamic Knowledge Retrieval:</strong> Sub-second similarity search across thousands of educational documents.</li>
+                            <li><strong>Adaptive Pedagogy:</strong> The system modifies its explanation complexity based on historical student interaction logs.</li>
+                            <li><strong>Tech Stack:</strong> JavaScript frontend, Node.js backend, IBM Watson Cloud endpoints.</li>
+                        </ul>
+                    </div>
+                `
+            },
+            'log-3': {
+                title: "DevOps at Scale: Lessons from the Cloud Arcade",
+                date: "DEC 15, 2025",
+                tag: "ACHIEVEMENT",
+                tagColor: "green",
+                image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+                body: `
+                    <div class="space-y-4">
+                        <p class="text-green-400 font-mono text-xs uppercase tracking-widest">Certification: Google Cloud Arcade Champion</p>
+                        <p>Mastered the art of enterprise-grade cloud deployments through the rigorous Google Cloud Arcade challenges, focusing on automation, scalability, and security.</p>
+                        
+                        <div class="bg-black/30 p-4 border-l-2 border-green-500 rounded">
+                            <h4 class="text-white font-bold text-sm mb-2">Technical Implementation</h4>
+                            <p class="text-xs">Successfully configured automated multi-environment CI/CD pipelines using **Cloud Build** and **Google Kubernetes Engine (GKE)**. Focused on YAML-based resource management and high-availability cluster setup.</p>
+                        </div>
+                        
+                        <p class="text-sm">Skills Verified:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-green-500/10 border border-green-500/30 rounded text-[9px] text-green-300">Docker Orchestration</span>
+                            <span class="px-2 py-1 bg-green-500/10 border border-green-500/30 rounded text-[9px] text-green-300">Serverless Functions</span>
+                            <span class="px-2 py-1 bg-green-500/10 border border-green-500/30 rounded text-[9px] text-green-300">IAM Protocols</span>
+                            <span class="px-2 py-1 bg-green-500/10 border border-green-500/30 rounded text-[9px] text-green-300">GenAI Integration</span>
+                        </div>
+                        
+                        <p class="text-xs text-gray-500 mt-2">The journey culminated in a deep understanding of managed environments and how to deploy robust applications that can handle real-world traffic spikes without manual intervention.</p>
+                    </div>
+                `
+            },
+            'log-4': {
+                title: "Smart India Hackathon: Building a Campus Nervous System",
+                date: "NOV 20, 2025",
+                tag: "EXPERIENCE",
+                tagColor: "yellow",
+                image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop",
+                body: `
+                    <div class="space-y-4">
+                        <p class="text-yellow-400 font-mono text-xs uppercase tracking-widest">Event: SIH 2025 (36-Hour Hackathon)</p>
+                        <p>In a high-pressure 36-hour sprint, I led a specialized team of 6 engineers to build **CampusPulse**—a unified digital ecosystem to solve fragmented university communication.</p>
+                        
+                        <div class="bg-black/30 p-4 border-l-2 border-yellow-500 rounded text-sm">
+                            "The challenge wasn't just building an app; it was building a synchronous platform that worked across web and mobile without latency issues."
+                        </div>
+                        
+                        <p class="text-xs"><strong>The Stack:</strong> Next.js for the administrative command center, React Native for the student mobile app, and Firebase for real-time synchronization and authentication.</p>
+                        
+                        <div class="border border-white/5 p-4 rounded bg-white/5">
+                            <h4 class="text-white font-bold text-xs mb-2">Key Outcomes</h4>
+                            <ul class="text-[10px] space-y-1 text-gray-400 font-mono">
+                                <li>> ZERO LATENCY EVENT SYNC</li>
+                                <li>> 500+ CONCURRENT USER LOAD TESTED</li>
+                                <li>> SECURE STUDENT CREDENTIAL HASHING</li>
+                                <li>> END-TO-END NOTIFICATION PROTOCOLS</li>
+                            </ul>
+                        </div>
+                    </div>
+                `
+            },
+            'log-5': {
+                title: "Auditing the Human Connection in an AI World",
+                date: "NOV 5, 2025",
+                tag: "TOOLS",
+                tagColor: "blue",
+                image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop",
+                body: `
+                    <div class="space-y-4">
+                        <p class="text-tech-blue font-mono text-xs uppercase tracking-widest">Concept: Content Audit Tool 2026</p>
+                        <p>In the transition from Search Engines to Answer Engines (AEO), traditional metrics aren't enough. I developed a TypeScript-powered tool specifically to audit content for AI-alignment.</p>
+                        
+                        <p class="text-sm">This tool evaluates content across five high-impact dimensions:</p>
+                        <div class="grid grid-cols-1 gap-2">
+                            <div class="flex items-center justify-between p-2 bg-blue-500/5 border border-blue-500/10 rounded">
+                                <span class="text-xs text-blue-200">AEO (Answer Engine Optimization)</span>
+                                <span class="text-[9px] font-mono text-blue-500">READY</span>
+                            </div>
+                            <div class="flex items-center justify-between p-2 bg-blue-500/5 border border-blue-500/10 rounded">
+                                <span class="text-xs text-blue-200">Humanization & Perplexity Scores</span>
+                                <span class="text-[9px] font-mono text-blue-500">ACTIVE</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-xs text-gray-400">The differentiator of this tool is its focus on maintaining the "Human Signature" in developer documentation, ensuring that content remains searchable by robots but meaningful to engineers.</p>
+                    </div>
                 `
             }
         };
@@ -2917,25 +3018,24 @@
             }
         }
 
-        // Stark File System Functions
+        // Stark File System Functions - Side Panel Approach
         let currentExpandedFile = null;
 
         function openStarkFile(fileElement) {
-            if (currentExpandedFile === fileElement) return;
+            // If clicking the same file, close it
+            if (currentExpandedFile === fileElement) {
+                closeStarkFile();
+                return;
+            }
 
             // Close any currently open file
             if (currentExpandedFile) {
-                closeStarkFile();
+                currentExpandedFile.classList.remove('active');
             }
 
             // Get the expanded content from the clicked file
             const expandedView = fileElement.querySelector('.stark-expanded-view');
             const cardClass = fileElement.querySelector('.stark-stack-card').className;
-
-            // Create a fixed overlay card in the body (outside 3D transforms)
-            const overlay = document.createElement('div');
-            overlay.id = 'starkOverlayCard';
-            overlay.className = 'stark-overlay-card';
 
             // Extract color class
             let colorClass = '';
@@ -2944,62 +3044,62 @@
             else if (cardClass.includes('card-yellow')) colorClass = 'card-yellow';
             else if (cardClass.includes('card-purple')) colorClass = 'card-purple';
 
-            overlay.innerHTML = `
-                <div class="stark-overlay-content ${colorClass}">
-                    <div class="stark-folder-tab">📂 PROJECT FILE</div>
-                    <button class="stark-close-btn ${colorClass ? 'btn-close-' + colorClass.replace('card-', '') : ''}" onclick="closeStarkFile()">
-                        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+            // Get overlay color for tab
+            let tabColorClass = '';
+            if (colorClass === 'card-red') tabColorClass = 'text-hot-red border-hot-red';
+            else if (colorClass === 'card-green') tabColorClass = 'text-green-400 border-green-400';
+            else if (colorClass === 'card-yellow') tabColorClass = 'text-yellow-400 border-yellow-400';
+            else if (colorClass === 'card-purple') tabColorClass = 'text-purple-400 border-purple-400';
+            else tabColorClass = 'text-tech-blue border-tech-blue';
+
+            // Get the side detail panel
+            const sideDetail = document.getElementById('starkSideDetail');
+            const placeholder = document.getElementById('starkPlaceholder');
+
+            // Build the side panel content
+            sideDetail.innerHTML = `
+                <div class="stark-side-content ${colorClass}">
+                    <div class="stark-side-tab">ðŸ“‚ PROJECT FILE</div>
+                    <button class="stark-side-close" onclick="closeStarkFile()">
+                        <i data-lucide="x" style="width: 18px; height: 18px;"></i>
                     </button>
-                    ${expandedView.innerHTML}
+                    <div class="stark-side-body">
+                        ${expandedView.innerHTML}
+                    </div>
                 </div>
             `;
 
-            document.body.appendChild(overlay);
+            // Mark file as active
+            fileElement.classList.add('active');
             currentExpandedFile = fileElement;
 
-            // Show backdrop
-            const backdrop = document.getElementById('starkBackdrop');
-            if (backdrop) {
-                backdrop.classList.add('active');
-            }
-
-            // Lock body scroll
-            document.body.style.overflow = 'hidden';
-
-            // Trigger animation
-            requestAnimationFrame(() => {
-                overlay.classList.add('active');
-            });
+            // Hide placeholder, show detail
+            if (placeholder) placeholder.style.display = 'none';
+            sideDetail.classList.add('active');
 
             // Re-initialize Lucide icons
             setTimeout(() => {
                 lucide.createIcons();
-            }, 100);
+            }, 50);
         }
 
         function closeStarkFile() {
-            // Remove overlay card
-            const overlay = document.getElementById('starkOverlayCard');
-            if (overlay) {
-                overlay.classList.remove('active');
-                setTimeout(() => {
-                    overlay.remove();
-                }, 300);
+            const sideDetail = document.getElementById('starkSideDetail');
+            const placeholder = document.getElementById('starkPlaceholder');
+
+            if (sideDetail) {
+                sideDetail.classList.remove('active');
             }
 
             if (currentExpandedFile) {
-                currentExpandedFile.classList.remove('expanded');
+                currentExpandedFile.classList.remove('active');
                 currentExpandedFile = null;
             }
 
-            // Hide backdrop
-            const backdrop = document.getElementById('starkBackdrop');
-            if (backdrop) {
-                backdrop.classList.remove('active');
+            // Show placeholder again
+            if (placeholder) {
+                placeholder.style.display = '';
             }
-
-            // Unlock body scroll
-            document.body.style.overflow = '';
         }
 
         // Close on ESC key
@@ -3142,7 +3242,7 @@
     </script>
     <script>
         // Lanyard WebSocket for Live Discord Status
-        const DISCORD_ID = "1173230109021442130"; // 🔴 REPLACE THIS WITH YOUR DISCORD ID
+        const DISCORD_ID = "1173230109021442130"; // ðŸ”´ REPLACE THIS WITH YOUR DISCORD ID
 
         // Only connect if ID is set
         if (DISCORD_ID) {
@@ -3220,6 +3320,63 @@
             }
         }
     </script>
+    <!-- AUDIO CORE -->
+    <audio id="avengersTheme" loop>
+        <source src="theme.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('avengersTheme');
+            const toggle = document.getElementById('themeToggle');
+            const icon = document.getElementById('musicIcon');
+            const status = document.querySelector('.audio-status');
+            let isPlaying = false;
+
+            // Browser Autoplay Workaround
+            const initiateAudio = () => {
+                if (!isPlaying) {
+                    audio.play().then(() => {
+                        isPlaying = true;
+                        toggle.classList.add('playing');
+                        icon.classList.remove('text-tech-blue');
+                        icon.classList.add('text-hot-red');
+                        status.innerText = "SIGNAL ACTIVE";
+                        icon.setAttribute('data-lucide', 'pause');
+                        lucide.createIcons();
+                    }).catch(error => console.log("Init block: ", error));
+                    document.removeEventListener('click', initiateAudio);
+                }
+            };
+
+            // Toggle functionality
+            toggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (isPlaying) {
+                    audio.pause();
+                    isPlaying = false;
+                    toggle.classList.remove('playing');
+                    icon.classList.remove('text-hot-red');
+                    icon.classList.add('text-tech-blue');
+                    status.innerText = "SIGNAL MUTED";
+                    icon.setAttribute('data-lucide', 'music');
+                } else {
+                    audio.play();
+                    isPlaying = true;
+                    toggle.classList.add('playing');
+                    icon.classList.remove('text-tech-blue');
+                    icon.classList.add('text-hot-red');
+                    status.innerText = "SIGNAL ACTIVE";
+                    icon.setAttribute('data-lucide', 'pause');
+                }
+                lucide.createIcons();
+            });
+
+            // Start on first user interaction
+            document.addEventListener('click', initiateAudio, { once: true });
+        });
+    </script>
+    <script src="projects-data.js"></script>
 </body>
 
 </html>
