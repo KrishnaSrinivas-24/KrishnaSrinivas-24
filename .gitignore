@@ -1,0 +1,72 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+*.tsbuildinfo
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*backup*
+
+# Version Control
+.git/
+
+# Deployment
+.vercel/
+.netlify/
+
+# Archive & Backup
+backup_*/
+*.zip
+*.rar
+*.tar.gz
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# IDE specific
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Local testing
+test-results/

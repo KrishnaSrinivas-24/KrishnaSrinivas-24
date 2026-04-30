@@ -95,6 +95,31 @@ Status: ⚡ Building the future
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  ◆ QUICK ACCESS CHANNELS ◆                                                    [RECRUITER LINKS] │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+<a href="https://krishnasrinivas-24.github.io/My-Portfolio/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-0d1117?style=for-the-badge&logoColor=00f3ff" alt="Portfolio Link"/>
+</a>
+<a href="https://github.com/KrishnaSrinivas-24/KrishnaSrinivas-24/blob/main/resume.html" target="_blank">
+  <img src="https://img.shields.io/badge/📄_RESUME-0d1117?style=for-the-badge&logoColor=ff1744" alt="Resume"/>
+</a>
+<a href="https://linkedin.com/in/krishnasrinivas-" target="_blank">
+  <img src="https://img.shields.io/badge/💼_LINKEDIN-0d1117?style=for-the-badge&logoColor=0A66C2" alt="LinkedIn"/>
+</a>
+<a href="mailto:krishnasrinivas2409@gmail.com">
+  <img src="https://img.shields.io/badge/📧_CONTACT-0d1117?style=for-the-badge&logoColor=EA4335" alt="Email"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
 │  ◆ CREDENTIALS & VERIFICATION ◆                                                                  │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -115,6 +140,18 @@ Status: ⚡ Building the future
 │  ◆ CLASSIFIED OPERATIONS ◆                                               [TOP SECRET CLEARANCE] │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+</div>
+
+<div align="center">
+
+**🌟 FEATURED MISSIONS (Top Tier)**
+
+| Project | Description | Tech Stack | Status |
+|---------|-------------|-----------|--------|
+| **J.A.R.V.I.S.** | Multi-agent AI framework with autonomous reasoning | Python, LLM, Prompt Eng. | 🔴 Beta |
+| **FLOATCHAT** | RAG-powered text-to-SQL for ocean data | TypeScript, React, RAG | 🟢 Live |
+| **OceanGate** | Real-time ocean data visualization platform | Next.js, TypeScript, Vercel | 🟢 Deployed |
 
 </div>
 
@@ -255,6 +292,123 @@ Status: ⚡ Building the future
 
 ### 🏆 GitHub Trophies
 [![trophy](https://github-profile-trophy.vercel.app/?username=KrishnaSrinivas-24)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+---
+
+<div align="center">
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  ◆ ALL MISSIONS - PROJECT CATALOGUE ◆                                    [COMPLETE INVENTORY] │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+<div align="center">
+
+### 🤖 **SECTOR_AI: ARTIFICIAL INTELLIGENCE** [3 Projects]
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **J.A.R.V.I.S.** | Multi-agent orchestration framework with autonomous reasoning capabilities | [View Repo](https://github.com/KrishnaSrinivas-24/JARVIS) |
+| **FLOATCHAT** | RAG-powered text-to-SQL for ocean data analysis (SIH Finalist) | [View Repo](https://github.com/KrishnaSrinivas-24/FLOATCHAT) |
+| **LearnMate** | Adaptive learning platform with IBM Watsonx AI tutor | [View Repo](https://github.com/KrishnaSrinivas-24/LearnMate) |
+
+### 📊 **SECTOR_ML: MACHINE LEARNING** [3 Projects]
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Amazon ML Challenge 2025** | Competition: Product attribute extraction from images using XGBoost & Neural Networks | [View Repo](https://github.com/KrishnaSrinivas-24/Amazon_ML-Challenge_2025) |
+| **ML Term Project** | Deep learning implementations (CNNs, RNNs, Transformers) for GITAM University | [View Repo](https://github.com/KrishnaSrinivas-24/ML_TERM-PROJECT) |
+| **ML Projects Collection** | Scikit-learn & Pandas: Classification, Regression, Clustering & Recommendation Systems | [View Repo](https://github.com/KrishnaSrinivas-24/ML-Projects) |
+
+### 🌐 **SECTOR_WEB: FULL STACK APPLICATIONS** [2 Projects]
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Campus Pulse** | University event management app with real-time notifications & RSVP system | [View Repo](https://github.com/KrishnaSrinivas-24/CAMPUS-PULSE) |
+| **OceanGate** | Real-time ocean data visualization platform (Next.js, deployed on Vercel) | [View Repo](https://github.com/KrishnaSrinivas-24/OceanGate) \| [Live](https://oceangate-vercel.app) |
+
+### 🛠️ **SECTOR_UTIL: TOOLS & UTILITIES** [2 Projects]
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Content Audit Tool** | NLP-based content analysis for quality, consistency & SEO optimization | [View Repo](https://github.com/KrishnaSrinivas-24/Content_Audit_Tool) |
+| **Magic with Code** | Python utilities & automation scripts for development workflows | [View Repo](https://github.com/KrishnaSrinivas-24/Magic_with_Code) |
+
+</div>
+
+---
+
+<div align="center">
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  ◆ PORTFOLIO DEPLOYMENT & SETUP ◆                                          [OPERATION MANUAL] │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 📍 **Deployment Information**
+
+- **🌍 Live Portfolio:** [https://krishnasrinivas-24.github.io/My-Portfolio/](https://krishnasrinivas-24.github.io/My-Portfolio/)
+- **📦 Hosting:** GitHub Pages (Static Site)
+- **🔄 Auto-Deploy:** Enabled on push to `main` branch
+- **⚡ Performance:** Lighthouse Score (check via [PageSpeed Insights](https://pagespeed.web.dev/))
+
+### 🚀 **Local Development Setup**
+
+```bash
+# Clone this repository
+git clone https://github.com/KrishnaSrinivas-24/My-Portfolio.git
+cd My-Portfolio
+
+# Serve locally (using Python 3)
+python -m http.server 8000
+
+# Or using Node.js
+npx http-server .
+
+# Visit: http://localhost:8000
+```
+
+### 📂 **Project Structure**
+
+```
+KrishnaSrinivas-24/
+├── index.html              # Main portfolio page
+├── resume.html             # Interactive resume
+├── projects-data.js        # Dynamic project content
+├── projects-styles.css     # Custom styling
+├── presets/                # Images & assets
+│   ├── jarvis.png
+│   ├── floatchat.png
+│   ├── oceangate.png
+│   └── ...
+└── README.md              # This file
+```
+
+### 🔧 **Tech Stack**
+
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript
+- **Styling:** Tailwind CSS (CDN), Custom CSS
+- **Icons:** Lucide Icons (CDN)
+- **Animations:** Custom JavaScript + CSS Animations
+- **Deployment:** GitHub Pages + GitHub Actions
+- **Typography:** Google Fonts
+
+### 📝 **Contributing**
+
+This is a personal portfolio repository. For suggestions or bugs:
+1. [Open an Issue](https://github.com/KrishnaSrinivas-24/KrishnaSrinivas-24/issues/new)
+2. Provide detailed description
+3. I'll review and respond within 48 hours
+
+### 📜 **License**
+
+This project is open source and available under the [MIT License](LICENSE).
 
 </div>
 
