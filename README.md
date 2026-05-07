@@ -26,14 +26,15 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f3ff,100:ff1744&height=120&section=header&text=&fontSize=0" width="100%"/>
 
 <!-- AGENT IDENTIFICATION -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=40&duration=3000&pause=1000&color=00F3FF&center=true&vCenter=true&width=700&height=70&lines=%E2%9A%A1+AGENT+MKS-2409+%E2%9A%A1;KRISHNA+SRINIVAS;INNOVATION+INITIATIVE" alt="Agent Title" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=40&duration=3000&pause=1000&color=00F3FF&center=true&vCenter=true&width=700&height=70&lines=%E2%9A%A1+AGENT+MKS-2409+%E2%9A%A1;KRISHNA+SRINIVAS;AI+%26+ML+ENGINEER;CLOUD+CHAMPION" alt="Agent Title" />
 
 <br/>
 
 <!-- STATUS BADGES -->
 <img src="https://img.shields.io/badge/STATUS-ACTIVE-00ff00?style=for-the-badge&labelColor=0a0a0a&logo=statuspage&logoColor=00ff00" alt="Status"/>
 <img src="https://img.shields.io/badge/CLEARANCE-LEVEL_5-00f3ff?style=for-the-badge&labelColor=0a0a0a&logo=auth0&logoColor=00f3ff" alt="Clearance"/>
-<img src="https://img.shields.io/badge/MISSION-BUILD_&_EXPLORE-ff1744?style=for-the-badge&labelColor=0a0a0a&logo=target&logoColor=ff1744" alt="Mission"/>
+<img src="https://img.shields.io/badge/MISSION-BUILD_&_INNOVATE-ff1744?style=for-the-badge&labelColor=0a0a0a&logo=target&logoColor=ff1744" alt="Mission"/>
+<img src="https://img.shields.io/badge/CLOUD-CHAMPION-4285F4?style=for-the-badge&labelColor=0a0a0a&logo=google-cloud&logoColor=4285F4" alt="Cloud"/>
 
 <br/><br/>
 
@@ -71,8 +72,9 @@ Agent: Krishna Srinivas
 Codename: MKS-2409
 Base: GITAM University, India
 Specialization: AI & Machine Learning
-Year: B.Tech 3rd Year
+Year: B.Tech 3rd Year (AIML)
 Status: ⚡ Building the future
+Clearance: Google Cloud Champion
 ```
 
 </td>
@@ -80,10 +82,11 @@ Status: ⚡ Building the future
 
 ### 📡 CURRENT OPERATIONS
 
-- 🔭 **Primary Mission:** Building [**J.A.R.V.I.S.**](https://github.com/KrishnaSrinivas-24/JARVIS) — Personal AI Assistant
-- 🌱 **Training Protocol:** DSA, Python, AI/ML Systems
-- 🏆 **Achievement Unlocked:** Google Cloud Arcade Champion
-- ⚡ **Fun Intel:** Turning curiosity into working code, one commit at a time!
+- 🔭 **Primary:** [**J.A.R.V.I.S.**](https://github.com/KrishnaSrinivas-24/JARVIS) — Personal AI Orchestration System
+- 🌱 **Training:** Advanced ML, Cloud Architecture, LLM Systems
+- 🏆 **Recent Win:** Amazon ML Challenge 2025
+- 🎯 **Focus:** Multi-agent AI, RAG Systems, Cloud Native Apps
+- ⚡ **Philosophy:** Code meets curiosity, deployed at scale
 
 </td>
 </tr>
@@ -120,11 +123,209 @@ Status: ⚡ Building the future
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ CREDENTIALS & VERIFICATION ◆                                                                  │
+│  ◆ GOOGLE CLOUD CREDENTIALS ◆                                          [VERIFIED CERTIFICATIONS] │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-<!-- Holopin Badges -->
+### ☁️ **CLOUD CHAMPION ARSENAL** — 27 Skills Badges
+
+<table>
+<tr>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/t7v4pImHnItt0qqovwUz2GjP1XCVey5kaWPLncsKo8k%3D" width="100px" alt="Arcade Facilitator"/>
+<br/><sub><b>Arcade Facilitator</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/Yo73nOWW0bnRdJG1IlqLWHkdLmIS%2FgNGJX1RJcvqslk%3D" width="100px" alt="Level 3: GenAI"/>
+<br/><sub><b>Level 3: GenAI</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/qZjGzyBGSTLBMVTPk9R0VQVVF5hKLMKPFbM%2BnHgz3s0%3D" width="100px" alt="Prompt Design"/>
+<br/><sub><b>Prompt Design</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/g8V23FnPHTep%2Br0kLKcO8%2FfUZa1%2FBN25FpvhGq7yL%2Bc%3D" width="100px" alt="Intro to GenAI"/>
+<br/><sub><b>Intro to GenAI</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/h4B0Y05r7mBUOSar0SmUe6rp8QLLmqQnzYaJO6K9%2FjE%3D" width="100px" alt="Intro to LLMs"/>
+<br/><sub><b>Intro to LLMs</b></sub>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/S8zefcp%2FSzkfVKyhZ%2F44yZwTkjL%2F%2FR3YJ2%2FxpDDMEbU%3D" width="100px" alt="Responsible AI"/>
+<br/><sub><b>Responsible AI</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/ZntJVXXxJkZJJ3OVbS2lcb0keBuHHI14XnMWOYLIvHM%3D" width="100px" alt="GenAI Fundamentals"/>
+<br/><sub><b>GenAI Fundamentals</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/5ZEXWrPxMRfdgtN4W%2FlmJvPemZaFb4qT4M04fhN2PTA%3D" width="100px" alt="Arcade Game"/>
+<br/><sub><b>Arcade Games</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/okh0CxO0FR8bZyL%2FMHzIrYwJGLJYJKXaC%2BnGGVmNgvY%3D" width="100px" alt="Trivia"/>
+<br/><sub><b>Trivia Series</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/v4XxN8e%2BZvlC%2F%2BJLUX5b3yFpqKZckRQZMFrKl%2F5YXvU%3D" width="100px" alt="Vertex AI"/>
+<br/><sub><b>Vertex AI</b></sub>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/%2FbXgb6hm8jKPfjPYKRmm29JAJ0iJtP%2BPIc9yNivJzJU%3D" width="100px" alt="Cloud Computing"/>
+<br/><sub><b>Cloud Computing</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/2TN7u6lqHb1R5L62%2FV2%2Fr%2Bo0YKVbdkEWPWjjJKb0jEU%3D" width="100px" alt="App Dev"/>
+<br/><sub><b>App Development</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/wvTZfNhT%2BvKZawCzz6FMR%2FvVhWr0K%2BZCMZ8LZHixL4I%3D" width="100px" alt="Data Analytics"/>
+<br/><sub><b>Data Analytics</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/V4BeOTdIbg4WW49n%2FpPWxiNDI%2FYHsZIhIMa6L4jzpXE%3D" width="100px" alt="BigQuery"/>
+<br/><sub><b>BigQuery Basics</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/CzDXUIf%2B%2BYhTLB9hzs%2F9w8GHzvBEBp%2BUWiVUWc%2FJMCY%3D" width="100px" alt="Kubernetes"/>
+<br/><sub><b>Kubernetes Engine</b></sub>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/JfJPiYj%2BstXr24uSm%2FPe%2BfJeqWULKw9jqgp%2BEL0j6E4%3D" width="100px" alt="ML Pipelines"/>
+<br/><sub><b>ML Pipelines</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/QxCCPu7A%2FdmMZxMJj0o6Gzwg03fXPHmBCLKdVH3M0do%3D" width="100px" alt="TensorFlow"/>
+<br/><sub><b>TensorFlow GCP</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/KOg7C89EJRgd3N4zmDmEbQSRfhXPUvlO%2F2WgT63o%2FA8%3D" width="100px" alt="Cloud Functions"/>
+<br/><sub><b>Cloud Functions</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/u%2Fq%2BQSDOe14XVjzCqKmO3wFh2L9s9C3HryvzoP%2FHXMI%3D" width="100px" alt="Cloud Run"/>
+<br/><sub><b>Cloud Run Apps</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/VmJR2IxK%2BABYcKtpLB%2FJCyT2C1MG%2BnHLDQslvt0ht9Q%3D" width="100px" alt="Pub/Sub"/>
+<br/><sub><b>Pub/Sub Messaging</b></sub>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/ZjUNVPHPYo%2FopJ%2BUboJvzQAz%2BtEJC7bDOzkqHg2tL0k%3D" width="100px" alt="Cloud Storage"/>
+<br/><sub><b>Cloud Storage</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/LkOdDTIbz08F6MAzKWYPWZ0p%2BlBjw3OlBxLqduiH2F8%3D" width="100px" alt="IAM Security"/>
+<br/><sub><b>IAM & Security</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/yAYfnSV8Vh9slBgCVBi5h6gXx%2FqTNyBz2t%2FxCUBLlHg%3D" width="100px" alt="Networking"/>
+<br/><sub><b>Cloud Networking</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/OeZCOLZOG68MnF1vZbNFKFG2mPaJE7n4xwKewdKtqPo%3D" width="100px" alt="Monitoring"/>
+<br/><sub><b>Cloud Monitoring</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/qI0%2FQP%2FrFTThT7n7dGj%2BYW5%2F8tCqhBGLOK1YxJRbvDo%3D" width="100px" alt="DevOps"/>
+<br/><sub><b>DevOps Essentials</b></sub>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/K4GsJZB6jnLjD1PNQWqNbXDJrvPNvzaHh9hLRGXBJas%3D" width="100px" alt="Cloud SQL"/>
+<br/><sub><b>Cloud SQL</b></sub>
+</a>
+</td>
+<td align="center" width="20%">
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://cdn.qwiklabs.com/C%2BXQP0%2FOlWwQh1bWn5uPjr2qkCQiXbLVZKCPpqZzZj0%3D" width="100px" alt="Compute Engine"/>
+<br/><sub><b>Compute Engine</b></sub>
+</a>
+</td>
+<td colspan="3" align="center">
+<br/>
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79">
+<img src="https://img.shields.io/badge/VIEW_FULL_PROFILE-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="View Profile"/>
+</a>
+<br/><br/>
+<sub><i>27 Skills Badges Earned | Google Cloud Champion</i></sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+<div align="center">
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  ◆ HOLOPIN ACHIEVEMENT BOARD ◆                                           [COMMUNITY CREDENTIALS] │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
 <a href="https://holopin.io/@krishnasrinivas24">
   <img src="https://holopin.io/api/user/board?user=krishnasrinivas24" alt="Holopin Badges" width="100%"/>
 </a>
@@ -149,9 +350,10 @@ Status: ⚡ Building the future
 
 | Project | Description | Tech Stack | Status |
 |---------|-------------|-----------|--------|
-| **J.A.R.V.I.S.** | Multi-agent AI framework with autonomous reasoning | Python, LLM, Prompt Eng. | 🔴 Beta |
-| **FLOATCHAT** | RAG-powered text-to-SQL for ocean data | TypeScript, React, RAG | 🟢 Live |
-| **OceanGate** | Real-time ocean data visualization platform | Next.js, TypeScript, Vercel | 🟢 Deployed |
+| **[J.A.R.V.I.S.](https://github.com/KrishnaSrinivas-24/JARVIS)** | Multi-agent AI orchestration with autonomous reasoning & persistent memory | Python, LLM APIs, Node.js, Obsidian | 🔴 Active Dev |
+| **[FLOATCHAT](https://github.com/KrishnaSrinivas-24/floatchat)** | RAG-powered text-to-SQL for ocean data analysis (SIH 2024 Finalist) | TypeScript, React, RAG, NLP | 🟢 Live |
+| **[OceanGate](https://github.com/KrishnaSrinivas-24/OceanGate)** | Real-time ocean data visualization platform | Next.js, TypeScript, Vercel | 🟢 Deployed |
+| **[LearnMate](https://github.com/KrishnaSrinivas-24/LearnMate)** | Adaptive learning platform with IBM Watsonx AI tutor | React, IBM Watson, ML | 🟡 Stable |
 
 </div>
 
@@ -160,30 +362,86 @@ Status: ⚡ Building the future
 <td width="50%" valign="top">
 
 ### 🤖 J.A.R.V.I.S.
-**[ AI ASSISTANT SYSTEM ]**
+**[ AI ORCHESTRATION SYSTEM ]**
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KrishnaSrinivas-24&repo=JARVIS&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117)](https://github.com/KrishnaSrinivas-24/JARVIS)
 
-`Python` `Speech Recognition` `NLP` `Automation`
+Multi-agent framework with capability routing, plan synthesis, approval gates, and persistent memory across sessions.
+
+`Python` `LLM Orchestration` `Node.js` `Agent Systems`
 
 </td>
 <td width="50%" valign="top">
 
 ### 🌐 FLOATCHAT
-**[ AI CHATBOT PLATFORM ]**
+**[ RAG-POWERED OCEAN DATA AI ]**
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KrishnaSrinivas-24&repo=floatchat&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117)](https://github.com/KrishnaSrinivas-24/floatchat)
 
-`React` `Node.js` `AI` `Real-time`
+SIH 2024 finalist project featuring text-to-SQL conversion for complex oceanographic queries.
+
+`TypeScript` `React` `RAG` `Text-to-SQL`
 
 </td>
 </tr>
 </table>
 
 <div align="center">
-  <a href="https://github.com/KrishnaSrinivas-24?tab=repositories">
-    <img src="https://img.shields.io/badge/◆_VIEW_ALL_MISSIONS-0d1117?style=for-the-badge&logo=github&logoColor=00f3ff&labelColor=0d1117" alt="All Repositories"/>
-  </a>
+
+### 📊 **ALL ACTIVE MISSIONS**
+
+<details>
+<summary><b>🤖 SECTOR_AI: Artificial Intelligence (3 Projects)</b></summary>
+<br/>
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **J.A.R.V.I.S.** | Multi-agent orchestration framework with autonomous reasoning capabilities | [View Repo](https://github.com/KrishnaSrinivas-24/JARVIS) |
+| **FLOATCHAT** | RAG-powered text-to-SQL for ocean data analysis (SIH Finalist) | [View Repo](https://github.com/KrishnaSrinivas-24/floatchat) |
+| **LearnMate** | Adaptive learning platform with IBM Watsonx AI tutor | [View Repo](https://github.com/KrishnaSrinivas-24/LearnMate) |
+
+</details>
+
+<details>
+<summary><b>📊 SECTOR_ML: Machine Learning (3 Projects)</b></summary>
+<br/>
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Amazon ML Challenge 2025** | Product attribute extraction using XGBoost & Neural Networks | [View Repo](https://github.com/KrishnaSrinivas-24/Amazon_ML-Challenge_2025) |
+| **ML Term Project** | Deep learning implementations (CNNs, RNNs, Transformers) | [View Repo](https://github.com/KrishnaSrinivas-24/ML_TERM-PROJECT) |
+| **ML Projects Collection** | Classification, Regression, Clustering & Recommendation Systems | [View Repo](https://github.com/KrishnaSrinivas-24/ML-Projects) |
+
+</details>
+
+<details>
+<summary><b>🌐 SECTOR_WEB: Full Stack Applications (2 Projects)</b></summary>
+<br/>
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Campus Pulse** | University event management with real-time notifications & RSVP | [View Repo](https://github.com/KrishnaSrinivas-24/CAMPUS-PULSE) |
+| **OceanGate** | Real-time ocean data visualization (Next.js, Vercel) | [View Repo](https://github.com/KrishnaSrinivas-24/OceanGate) |
+
+</details>
+
+<details>
+<summary><b>🛠️ SECTOR_UTIL: Tools & Utilities (2 Projects)</b></summary>
+<br/>
+
+| Project | Description | Link |
+|---------|-------------|------|
+| **Content Audit Tool** | NLP-based content analysis for quality & SEO | [View Repo](https://github.com/KrishnaSrinivas-24/Content_Audit_Tool) |
+| **Magic with Code** | Python utilities & automation scripts | [View Repo](https://github.com/KrishnaSrinivas-24/Magic_with_Code) |
+
+</details>
+
+<br/>
+
+<a href="https://github.com/KrishnaSrinivas-24?tab=repositories">
+  <img src="https://img.shields.io/badge/◆_VIEW_ALL_REPOSITORIES-0d1117?style=for-the-badge&logo=github&logoColor=00f3ff&labelColor=0d1117" alt="All Repositories"/>
+</a>
+
 </div>
 
 ---
@@ -205,37 +463,41 @@ Status: ⚡ Building the future
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=00f3ff)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=f7df1e)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=3178C6)
 ![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=ed8b00)
 ![C](https://img.shields.io/badge/C-0d1117?style=for-the-badge&logo=c&logoColor=00599C)
 ![Kotlin](https://img.shields.io/badge/Kotlin-0d1117?style=for-the-badge&logo=kotlin&logoColor=7F52FF)
-![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=3178C6)
 
 <!-- AI/ML -->
-<h4>🧠 AI SYSTEMS</h4>
+<h4>🧠 AI & ML SYSTEMS</h4>
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-0d1117?style=for-the-badge&logo=tensorflow&logoColor=FF6F00)
 ![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=for-the-badge&logo=pytorch&logoColor=EE4C2C)
-![OpenCV](https://img.shields.io/badge/OpenCV-0d1117?style=for-the-badge&logo=opencv&logoColor=5C3EE8)
 ![Scikit Learn](https://img.shields.io/badge/Scikit_Learn-0d1117?style=for-the-badge&logo=scikitlearn&logoColor=F7931E)
+![OpenCV](https://img.shields.io/badge/OpenCV-0d1117?style=for-the-badge&logo=opencv&logoColor=5C3EE8)
 ![Pandas](https://img.shields.io/badge/Pandas-0d1117?style=for-the-badge&logo=pandas&logoColor=150458)
 ![NumPy](https://img.shields.io/badge/NumPy-0d1117?style=for-the-badge&logo=numpy&logoColor=013243)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-0d1117?style=for-the-badge&logo=huggingface&logoColor=FFD21E)
+![LangChain](https://img.shields.io/badge/LangChain-0d1117?style=for-the-badge&logo=chainlink&logoColor=375BD2)
 
 <!-- FRONTEND -->
 <h4>🎨 INTERFACE SYSTEMS</h4>
 
 ![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-0d1117?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4)
 ![HTML5](https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=E34F26)
 ![CSS3](https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css3&logoColor=1572B6)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-0d1117?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4)
+![Figma](https://img.shields.io/badge/Figma-0d1117?style=for-the-badge&logo=figma&logoColor=F24E1E)
 
 <!-- BACKEND & CLOUD -->
-<h4>⚙️ BACKEND OPERATIONS</h4>
+<h4>⚙️ BACKEND & CLOUD OPERATIONS</h4>
 
 ![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=node.js&logoColor=339933)
 ![Express](https://img.shields.io/badge/Express-0d1117?style=for-the-badge&logo=express&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=for-the-badge&logo=firebase&logoColor=FFCA28)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-0d1117?style=for-the-badge&logo=googlecloud&logoColor=4285F4)
+![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=for-the-badge&logo=firebase&logoColor=FFCA28)
+![Vercel](https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-0d1117?style=for-the-badge&logo=mongodb&logoColor=47A248)
 ![MySQL](https://img.shields.io/badge/MySQL-0d1117?style=for-the-badge&logo=mysql&logoColor=4479A1)
 
@@ -245,9 +507,9 @@ Status: ⚡ Building the future
 ![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
 ![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-0d1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
-![Postman](https://img.shields.io/badge/Postman-0d1117?style=for-the-badge&logo=postman&logoColor=FF6C37)
-![Figma](https://img.shields.io/badge/Figma-0d1117?style=for-the-badge&logo=figma&logoColor=F24E1E)
 ![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=FCC624)
+![Postman](https://img.shields.io/badge/Postman-0d1117?style=for-the-badge&logo=postman&logoColor=FF6C37)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=2496ED)
 
 </div>
 
@@ -265,7 +527,7 @@ Status: ⚡ Building the future
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=KrishnaSrinivas-24&show_icons=true&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117&hide_border=false&include_all_commits=true&count_private=true" height="180" alt="Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=KrishnaSrinivas-24&show_icons=true&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117&hide_border=false&layout=compact" height="180" alt="Languages"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=KrishnaSrinivas-24&show_icons=true&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117&hide_border=false&layout=compact&langs_count=8" height="180" alt="Languages"/>
 </div>
 
 <br/>
@@ -290,125 +552,7 @@ Status: ⚡ Building the future
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 🏆 GitHub Trophies
-[![trophy](https://github-profile-trophy.vercel.app/?username=KrishnaSrinivas-24)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
-
-<div align="center">
-
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ ALL MISSIONS - PROJECT CATALOGUE ◆                                    [COMPLETE INVENTORY] │
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
-</div>
-
-<div align="center">
-
-### 🤖 **SECTOR_AI: ARTIFICIAL INTELLIGENCE** [3 Projects]
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **J.A.R.V.I.S.** | Multi-agent orchestration framework with autonomous reasoning capabilities | [View Repo](https://github.com/KrishnaSrinivas-24/JARVIS) |
-| **FLOATCHAT** | RAG-powered text-to-SQL for ocean data analysis (SIH Finalist) | [View Repo](https://github.com/KrishnaSrinivas-24/FLOATCHAT) |
-| **LearnMate** | Adaptive learning platform with IBM Watsonx AI tutor | [View Repo](https://github.com/KrishnaSrinivas-24/LearnMate) |
-
-### 📊 **SECTOR_ML: MACHINE LEARNING** [3 Projects]
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **Amazon ML Challenge 2025** | Competition: Product attribute extraction from images using XGBoost & Neural Networks | [View Repo](https://github.com/KrishnaSrinivas-24/Amazon_ML-Challenge_2025) |
-| **ML Term Project** | Deep learning implementations (CNNs, RNNs, Transformers) for GITAM University | [View Repo](https://github.com/KrishnaSrinivas-24/ML_TERM-PROJECT) |
-| **ML Projects Collection** | Scikit-learn & Pandas: Classification, Regression, Clustering & Recommendation Systems | [View Repo](https://github.com/KrishnaSrinivas-24/ML-Projects) |
-
-### 🌐 **SECTOR_WEB: FULL STACK APPLICATIONS** [2 Projects]
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **Campus Pulse** | University event management app with real-time notifications & RSVP system | [View Repo](https://github.com/KrishnaSrinivas-24/CAMPUS-PULSE) |
-| **OceanGate** | Real-time ocean data visualization platform (Next.js, deployed on Vercel) | [View Repo](https://github.com/KrishnaSrinivas-24/OceanGate) \| [Live](https://oceangate-vercel.app) |
-
-### 🛠️ **SECTOR_UTIL: TOOLS & UTILITIES** [2 Projects]
-
-| Project | Description | Link |
-|---------|-------------|------|
-| **Content Audit Tool** | NLP-based content analysis for quality, consistency & SEO optimization | [View Repo](https://github.com/KrishnaSrinivas-24/Content_Audit_Tool) |
-| **Magic with Code** | Python utilities & automation scripts for development workflows | [View Repo](https://github.com/KrishnaSrinivas-24/Magic_with_Code) |
-
-</div>
-
----
-
-<div align="center">
-
-```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ PORTFOLIO DEPLOYMENT & SETUP ◆                                          [OPERATION MANUAL] │
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
-### 📍 **Deployment Information**
-
-- **🌍 Live Portfolio:** [https://krishnasrinivas-24.github.io/My-Portfolio/](https://krishnasrinivas-24.github.io/My-Portfolio/)
-- **📦 Hosting:** GitHub Pages (Static Site)
-- **🔄 Auto-Deploy:** Enabled on push to `main` branch
-- **⚡ Performance:** Lighthouse Score (check via [PageSpeed Insights](https://pagespeed.web.dev/))
-
-### 🚀 **Local Development Setup**
-
-```bash
-# Clone this repository
-git clone https://github.com/KrishnaSrinivas-24/My-Portfolio.git
-cd My-Portfolio
-
-# Serve locally (using Python 3)
-python -m http.server 8000
-
-# Or using Node.js
-npx http-server .
-
-# Visit: http://localhost:8000
-```
-
-### 📂 **Project Structure**
-
-```
-KrishnaSrinivas-24/
-├── index.html              # Main portfolio page
-├── resume.html             # Interactive resume
-├── projects-data.js        # Dynamic project content
-├── projects-styles.css     # Custom styling
-├── presets/                # Images & assets
-│   ├── jarvis.png
-│   ├── floatchat.png
-│   ├── oceangate.png
-│   └── ...
-└── README.md              # This file
-```
-
-### 🔧 **Tech Stack**
-
-- **Frontend:** HTML5, CSS3, Vanilla JavaScript
-- **Styling:** Tailwind CSS (CDN), Custom CSS
-- **Icons:** Lucide Icons (CDN)
-- **Animations:** Custom JavaScript + CSS Animations
-- **Deployment:** GitHub Pages + GitHub Actions
-- **Typography:** Google Fonts
-
-### 📝 **Contributing**
-
-This is a personal portfolio repository. For suggestions or bugs:
-1. [Open an Issue](https://github.com/KrishnaSrinivas-24/KrishnaSrinivas-24/issues/new)
-2. Provide detailed description
-3. I'll review and respond within 48 hours
-
-### 📜 **License**
-
-This project is open source and available under the [MIT License](LICENSE).
+<img src="https://github-profile-trophy.vercel.app/?username=KrishnaSrinivas-24&theme=darkhub&no-frame=false&no-bg=false&margin-w=4&title=MultiLanguage,Commits,Repositories,Stars,Followers,PullRequest" alt="Trophies"/>
 
 </div>
 
@@ -436,6 +580,9 @@ This project is open source and available under the [MIT License](LICENSE).
 <a href="https://auth.geeksforgeeks.org/user/krishnasrinivas2409" target="_blank">
   <img src="https://img.shields.io/badge/GeeksforGeeks-0d1117?style=for-the-badge&logo=geeksforgeeks&logoColor=298D46" alt="GeeksforGeeks"/>
 </a>
+<a href="https://www.cloudskillsboost.google/public_profiles/afabdbe8-4481-48fa-a268-de815c5a4b79" target="_blank">
+  <img src="https://img.shields.io/badge/Google_Cloud-0d1117?style=for-the-badge&logo=google-cloud&logoColor=4285F4" alt="Google Cloud"/>
+</a>
 <a href="mailto:krishnasrinivas2409@gmail.com">
   <img src="https://img.shields.io/badge/Secure_Mail-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/>
 </a>
@@ -448,15 +595,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-
-
-
-<!-- Alternative: Snake animation (requires GitHub Actions setup - see instructions below) -->
-<!-- To enable snake animation:
-1. Create .github/workflows/snake.yml in your profile repo
-2. Add the workflow from: https://github.com/Platane/snk
-3. Run the action once, then uncomment the lines below:
--->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KrishnaSrinivas-24/KrishnaSrinivas-24/output/github-snake-dark.svg" />
@@ -473,11 +611,11 @@ This project is open source and available under the [MIT License](LICENSE).
 ```
 ╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                                  ║
-║                    "Not just building systems. Building the future."                             ║
+║              "Building AI systems that don't just work — they think, adapt, evolve."            ║
 ║                                         — AGENT MKS-2409                                         ║
 ║                                                                                                  ║
 ╠══════════════════════════════════════════════════════════════════════════════════════════════════╣
-║                           ⚡ INNOVATION INITIATIVE • EST. 2024 ⚡                                 ║
+║                 ⚡ INNOVATION INITIATIVE • CLOUD CHAMPION • EST. 2024 ⚡                          ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -488,6 +626,6 @@ This project is open source and available under the [MIT License](LICENSE).
 <!-- 
 ╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║  END OF CLASSIFIED DOCUMENT • INNOVATION INITIATIVE • FILE: MKS-2409                              ║
-║  This profile is monitored. Unauthorized access will be reported to Initiative HQ.               ║
+║  Google Cloud Champion | 27 Skills Badges | AI/ML Engineer | Building the Future                ║
 ╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
 -->
