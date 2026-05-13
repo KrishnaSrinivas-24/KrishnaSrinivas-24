@@ -26,15 +26,15 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f3ff,100:ff1744&height=120&section=header&text=&fontSize=0" width="100%"/>
 
 <!-- AGENT IDENTIFICATION -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=40&duration=3000&pause=1000&color=00F3FF&center=true&vCenter=true&width=700&height=70&lines=%E2%9A%A1+AGENT+MKS-2409+%E2%9A%A1;KRISHNA+SRINIVAS;AI+%26+ML+ENGINEER;CLOUD+CHAMPION" alt="Agent Title" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=40&duration=3000&pause=1000&color=00F3FF&center=true&vCenter=true&width=800&height=70&lines=%E2%9A%A1+AGENT+MKS-2409+%E2%9A%A1;KRISHNA+SRINIVAS;AGENTIC+%26+AI+ARCHITECT;GCP+CHAMPION+%7C+SIH+FINALIST" alt="Agent Title" />
 
 <br/>
 
 <!-- STATUS BADGES -->
-<img src="https://img.shields.io/badge/STATUS-ACTIVE-00ff00?style=for-the-badge&labelColor=0a0a0a&logo=statuspage&logoColor=00ff00" alt="Status"/>
-<img src="https://img.shields.io/badge/CLEARANCE-LEVEL_5-00f3ff?style=for-the-badge&labelColor=0a0a0a&logo=auth0&logoColor=00f3ff" alt="Clearance"/>
-<img src="https://img.shields.io/badge/MISSION-BUILD_&_INNOVATE-ff1744?style=for-the-badge&labelColor=0a0a0a&logo=target&logoColor=ff1744" alt="Mission"/>
-<img src="https://img.shields.io/badge/CLOUD-CHAMPION-4285F4?style=for-the-badge&labelColor=0a0a0a&logo=google-cloud&logoColor=4285F4" alt="Cloud"/>
+<img src="https://img.shields.io/badge/STATUS-ARCHITECTING-00f3ff?style=for-the-badge&labelColor=0a0a0a&logo=statuspage&logoColor=00f3ff" alt="Status"/>
+<img src="https://img.shields.io/badge/SPEC-AGENTIC_%26_AI_ARCHITECT-ff1744?style=for-the-badge&labelColor=0a0a0a&logo=openai&logoColor=ff1744" alt="Specialization"/>
+<img src="https://img.shields.io/badge/MISSION-ARCHITECT_%26_ENGINEER-9c27b0?style=for-the-badge&labelColor=0a0a0a&logo=target&logoColor=9c27b0" alt="Mission"/>
+<img src="https://img.shields.io/badge/GCP-CLOUD_CHAMPION-4285F4?style=for-the-badge&labelColor=0a0a0a&logo=google-cloud&logoColor=4285F4" alt="Cloud"/>
 
 <br/><br/>
 
@@ -68,13 +68,14 @@
 ### 🎯 MISSION BRIEFING
 
 ```yaml
-Agent: Krishna Srinivas
-Codename: MKS-2409
-Base: GITAM University, India
-Specialization: AI & Machine Learning
-Year: B.Tech 3rd Year (AIML)
-Status: ⚡ Building the future
-Clearance: Google Cloud Champion
+Agent        : Krishna Srinivas
+Codename     : MKS-2409
+Base         : GITAM University, India
+Specialization: Agentic & AI Architect
+Year         : B.Tech Final Year (AIML)
+Status       : ◆ ARCHITECTING
+Mission      : Architect & Engineer
+Clearance    : GCP Champion | SIH Finalist
 ```
 
 </td>
@@ -82,11 +83,11 @@ Clearance: Google Cloud Champion
 
 ### 📡 CURRENT OPERATIONS
 
-- 🔭 **Primary:** [**J.A.R.V.I.S.**](https://github.com/KrishnaSrinivas-24/JARVIS) — Personal AI Orchestration System
-- 🌱 **Training:** Advanced ML, Cloud Architecture, LLM Systems
-- 🏆 **Recent Win:** Amazon ML Challenge 2025
-- 🎯 **Focus:** Multi-agent AI, RAG Systems, Cloud Native Apps
-- ⚡ **Philosophy:** Code meets curiosity, deployed at scale
+- 🤖 **Primary:** [**J.A.R.V.I.S.**](https://github.com/KrishnaSrinivas-24/JARVIS) — Multi-Agent AI Orchestration System
+- 📸 **Active:** [**SchoolSnap**](https://github.com/KrishnaSrinivas-24/SchoolSnap) — Biometric AI Parent Portal (Production)
+- 🔮 **Building:** OMNITRIX — Ben 10-inspired 13-agent local AI system (Gemma 4)
+- 🎯 **Focus:** Agentic systems, RAG pipelines, system design & scalable AI
+- ⚡ **Philosophy:** Not just building systems — building what comes next.
 
 </td>
 </tr>
@@ -123,7 +124,7 @@ Clearance: Google Cloud Champion
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ GOOGLE CLOUD CREDENTIALS ◆                                          [VERIFIED CERTIFICATIONS] │
+│  ◆ GOOGLE CLOUD CREDENTIALS ◆                                         [VERIFIED CERTIFICATIONS] │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -338,7 +339,7 @@ Clearance: Google Cloud Champion
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ CLASSIFIED OPERATIONS ◆                                               [TOP SECRET CLEARANCE] │
+│  ◆ MISSION DOSSIER ◆                                                         [ACTIVE OPERATIONS] │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -350,10 +351,11 @@ Clearance: Google Cloud Champion
 
 | Project | Description | Tech Stack | Status |
 |---------|-------------|-----------|--------|
-| **[J.A.R.V.I.S.](https://github.com/KrishnaSrinivas-24/JARVIS)** | Multi-agent AI orchestration with autonomous reasoning & persistent memory | Python, LLM APIs, Node.js, Obsidian | 🔴 Active Dev |
+| **[J.A.R.V.I.S.](https://github.com/KrishnaSrinivas-24/JARVIS)** | Multi-agent AI orchestration — autonomous reasoning, memory & approval gates | Python, LLM APIs, Node.js, Obsidian | 🔴 Active Dev |
+| **[SchoolSnap](https://github.com/KrishnaSrinivas-24/SchoolSnap)** | Biometric AI parent portal — facial recognition photo retrieval (Production) | Python, FAISS, FastAPI, React, Docker | 🟢 Production |
 | **[FLOATCHAT](https://github.com/KrishnaSrinivas-24/floatchat)** | RAG-powered text-to-SQL for ocean data analysis (SIH 2024 Finalist) | TypeScript, React, RAG, NLP | 🟢 Live |
-| **[OceanGate](https://github.com/KrishnaSrinivas-24/OceanGate)** | Real-time ocean data visualization platform | Next.js, TypeScript, Vercel | 🟢 Deployed |
-| **[LearnMate](https://github.com/KrishnaSrinivas-24/LearnMate)** | Adaptive learning platform with IBM Watsonx AI tutor | React, IBM Watson, ML | 🟡 Stable |
+| **[OMNITRIX](https://github.com/KrishnaSrinivas-24/OMNITRIX)** | Ben 10-inspired local AI with 13 specialized agent personas (Gemma 4) | Python, Ollama, Gemma 4, HUD UI | 🔴 Active Dev |
+| **[Madtown](https://github.com/KrishnaSrinivas-24/Madtown)** | Campus event discovery & social platform for college communities | Next.js, TypeScript, Firebase | 🟡 Beta |
 
 </div>
 
@@ -362,13 +364,39 @@ Clearance: Google Cloud Champion
 <td width="50%" valign="top">
 
 ### 🤖 J.A.R.V.I.S.
-**[ AI ORCHESTRATION SYSTEM ]**
+**[ MULTI-AGENT AI ORCHESTRATION ]**
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KrishnaSrinivas-24&repo=JARVIS&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117)](https://github.com/KrishnaSrinivas-24/JARVIS)
 
-Multi-agent framework with capability routing, plan synthesis, approval gates, and persistent memory across sessions.
+Agentic framework with capability routing, plan synthesis, approval gates, and persistent Obsidian memory across sessions.
 
 `Python` `LLM Orchestration` `Node.js` `Agent Systems`
+
+</td>
+<td width="50%" valign="top">
+
+### 📸 SCHOOLSNAP
+**[ BIOMETRIC AI PARENT PORTAL ]**
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KrishnaSrinivas-24&repo=SchoolSnap&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117)](https://github.com/KrishnaSrinivas-24/SchoolSnap)
+
+Production-grade facial recognition system — parents scan selfies to retrieve event photos via FAISS vector search.
+
+`Python` `FAISS` `FastAPI` `React` `Docker`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🌀 OMNITRIX
+**[ 13-AGENT LOCAL AI SYSTEM ]**
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KrishnaSrinivas-24&repo=OMNITRIX&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117)](https://github.com/KrishnaSrinivas-24/OMNITRIX)
+
+Ben 10-inspired holographic dial UI with 13 specialized AI agent personas, powered by local Gemma 4 via Ollama.
+
+`Python` `Ollama` `Gemma 4` `HUD UI`
 
 </td>
 <td width="50%" valign="top">
@@ -378,7 +406,7 @@ Multi-agent framework with capability routing, plan synthesis, approval gates, a
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=KrishnaSrinivas-24&repo=floatchat&theme=transparent&title_color=00f3ff&text_color=ffffff&icon_color=ff1744&border_color=00f3ff&bg_color=0d1117)](https://github.com/KrishnaSrinivas-24/floatchat)
 
-SIH 2024 finalist project featuring text-to-SQL conversion for complex oceanographic queries.
+SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries with RAG-powered retrieval.
 
 `TypeScript` `React` `RAG` `Text-to-SQL`
 
@@ -396,7 +424,9 @@ SIH 2024 finalist project featuring text-to-SQL conversion for complex oceanogra
 
 | Project | Description | Link |
 |---------|-------------|------|
-| **J.A.R.V.I.S.** | Multi-agent orchestration framework with autonomous reasoning capabilities | [View Repo](https://github.com/KrishnaSrinivas-24/JARVIS) |
+| **J.A.R.V.I.S.** | Multi-agent orchestration framework with autonomous reasoning & approval gates | [View Repo](https://github.com/KrishnaSrinivas-24/JARVIS) |
+| **SchoolSnap** | Biometric AI parent portal — FAISS facial recognition, Docker production stack | [View Repo](https://github.com/KrishnaSrinivas-24/SchoolSnap) |
+| **OMNITRIX** | 13-agent local AI system with Ben 10-inspired holographic HUD (Gemma 4) | [View Repo](https://github.com/KrishnaSrinivas-24/OMNITRIX) |
 | **FLOATCHAT** | RAG-powered text-to-SQL for ocean data analysis (SIH Finalist) | [View Repo](https://github.com/KrishnaSrinivas-24/floatchat) |
 | **LearnMate** | Adaptive learning platform with IBM Watsonx AI tutor | [View Repo](https://github.com/KrishnaSrinivas-24/LearnMate) |
 
@@ -415,11 +445,12 @@ SIH 2024 finalist project featuring text-to-SQL conversion for complex oceanogra
 </details>
 
 <details>
-<summary><b>🌐 SECTOR_WEB: Full Stack Applications (2 Projects)</b></summary>
+<summary><b>🌐 SECTOR_WEB: Full Stack Applications (3 Projects)</b></summary>
 <br/>
 
 | Project | Description | Link |
 |---------|-------------|------|
+| **Madtown** | Campus event discovery & social platform for college communities | [View Repo](https://github.com/KrishnaSrinivas-24/Madtown) |
 | **Campus Pulse** | University event management with real-time notifications & RSVP | [View Repo](https://github.com/KrishnaSrinivas-24/CAMPUS-PULSE) |
 | **OceanGate** | Real-time ocean data visualization (Next.js, Vercel) | [View Repo](https://github.com/KrishnaSrinivas-24/OceanGate) |
 
