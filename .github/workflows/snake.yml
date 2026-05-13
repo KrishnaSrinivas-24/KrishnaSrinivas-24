@@ -1,19 +1,14 @@
 # GitHub Snake Animation Workflow
-# This generates a snake animation that eats your GitHub contributions graph
-# Workflow runs every 12 hours and on push to main branch
-# Output: Generates snake.svg and snake-dark.svg in the "output" branch
+# Generates a snake animation that eats your GitHub contributions graph
+# Runs every 12 hours, on push to main, and on manual trigger
+# Output: generates SVGs/GIF into the "output" branch
 
 name: Generate Snake Animation
 
 on:
-  # Run automatically every 12 hours
   schedule:
     - cron: "0 */12 * * *"
-  
-  # Allow manual trigger via GitHub UI
   workflow_dispatch:
-  
-  # Run on push to main branch
   push:
     branches:
       - main
@@ -23,18 +18,23 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+    timeout-minutes: 10
+
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Generate Snake Animation
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-      
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
