@@ -7,84 +7,48 @@ const projectCategories = {
         icon: "presets/ai_folder.png",
         projects: [
             {
-                id: "jarvis",
-                name: "J.A.R.V.I.S.",
-                image: "presets/jarvis.png",
-                description: "Built an autonomous AI agent framework inspired by Iron Man's J.A.R.V.I.S. The system features multi-agent orchestration with hierarchical task planning, self-directed reasoning capabilities, and seamless LLM integration. Implements advanced prompt engineering for chain-of-thought reasoning and can execute complex multi-step tasks autonomously. Currently in beta testing with promising results in task decomposition and execution accuracy.",
-                tech: "Python // Multi-Agent // LLM",
-                status: "TOP SECRET",
-                tags: ["NEURAL", "BETA"],
-                link: "https://github.com/KrishnaSrinivas-24/JARVIS",
-                btnText: "INITIATE",
+                id: "vyuha_mind",
+                name: "Vyuha-Mind",
+                image: "presets/vyuha_mind.png",
+                description: "Autonomous Multi-Agent Product Strategy Simulator. An intelligent engine powered by multi-agent AI reasoning using Claude, Grok, and Gemini to simulate product market dynamics, competitive landscapes, and investor sentiment in real-time.",
+                tech: "Python // FastAPI // React // Multi-Agent",
+                status: "ACTIVE PROJECT",
+                tags: ["AI", "MULTI-AGENT", "SIMULATION"],
+                link: "https://github.com/KrishnaSrinivas-24/Vyuha-Mind.git",
+                btnText: "INITIATE SIMULATION",
                 btnIcon: "zap"
             },
             {
                 id: "floatchat",
-                name: "FLOATCHAT",
+                name: "Float-Chat AI",
                 image: "presets/floatchat.png",
-                description: "Developed an innovative RAG-powered text-to-SQL platform specifically designed for ocean and environmental data analysis. Users can query complex oceanographic datasets using natural language, which the system converts to optimized SQL queries. Features real-time data visualization with interactive charts and maps, making scientific data accessible to non-technical stakeholders. Built during the SIH finals as a solution for INCOIS data accessibility challenges.",
-                tech: "TypeScript // React // RAG",
-                status: "CONFIDENTIAL",
-                tags: ["SQL-CORE", "LIVE"],
+                description: "Full-stack, AI-powered geospatial visualization platform to track, analyze, and interact with real-time oceanographic data. Integrates global Argo Float telemetry with Gemini LLM to transform raw oceanic metrics into interactive, human-readable insights using RAG.",
+                tech: "React // FastAPI // Gemini // PostgreSQL",
+                status: "V1 PRODUCTION",
+                tags: ["AI", "GEOSPATIAL", "RAG"],
                 link: "https://github.com/KrishnaSrinivas-24/FLOATCHAT",
-                btnText: "ACCESS FILE",
-                btnIcon: "arrow-right"
-            },
-            {
-                id: "learnmate",
-                name: "LearnMate",
-                image: "presets/learnmate.png",
-                description: "Created an adaptive learning platform powered by IBM Watsonx AI capabilities. The system analyzes student learning patterns and dynamically generates personalized curricula tailored to individual strengths and weaknesses. Features AI-driven tutoring that provides contextual explanations, practice problems, and progress tracking. Utilizes advanced NLP for understanding student queries and providing accurate, helpful responses.",
-                tech: "Watsonx // AI Tutor // JS",
-                status: "ACTIVE PROJECT",
-                tags: ["IBM", "WATSONX"],
-                link: "https://github.com/KrishnaSrinivas-24/LearnMate",
-                btnText: "VIEW SOURCE",
-                btnIcon: "code"
+                btnText: "ACCESS PLATFORM",
+                btnIcon: "map"
             }
         ]
     },
-    ml: {
-        name: "MACHINE LEARNING",
-        label: "SECTOR_ML",
+    data: {
+        name: "DATA & ANALYTICS",
+        label: "SECTOR_DATA",
         color: "yellow",
         icon: "presets/ml_folder.png",
         projects: [
             {
-                id: "amazon_ml",
-                name: "Amazon ML Challenge",
-                image: "presets/amazon_ml.png",
-                description: "Competed in the 2025 Amazon Machine Learning Challenge, developing a high-accuracy predictive model for product attribute extraction from images. Implemented advanced feature engineering techniques including image preprocessing, data augmentation, and ensemble methods. Utilized XGBoost and neural network architectures to achieve competitive accuracy. The project showcases skills in handling large-scale datasets and optimizing model performance under competition constraints.",
-                tech: "Python // Modeling // AWS",
-                status: "COMPETITION",
-                tags: ["COMP", "AWS"],
-                link: "https://github.com/KrishnaSrinivas-24/Amazon_ML-Challenge_2025",
-                btnText: "ANALYZE",
+                id: "aadhaar_insights",
+                name: "Aadhaar Insights",
+                image: "presets/aadhaar_insights.png",
+                description: "A production-grade data analytics dashboard developed for UIDAI that transforms Aadhaar datasets into actionable intelligence. Features ML-powered 30-day demand forecasting, an anomaly detection system for fraud patterns, and interactive geographic heatmaps for policy-grade insights.",
+                tech: "Python // Streamlit // Pandas // Scikit-learn",
+                status: "LIVE SYSTEM",
+                tags: ["DATA", "ML", "ANALYTICS"],
+                link: "https://github.com/KrishnaSrinivas-24/Aadhaar-Insights-Analytics",
+                btnText: "VIEW DASHBOARD",
                 btnIcon: "bar-chart-2"
-            },
-            {
-                id: "ml_term",
-                name: "ML Term Project",
-                image: "presets/ml_term.png",
-                description: "Comprehensive deep learning project for my MLA-CSEN3261 course at GITAM University. Implemented and analyzed various neural network architectures including CNNs, RNNs, and Transformers. The project explores hyperparameter tuning, regularization techniques, and architectural optimizations. Includes detailed documentation and Jupyter notebooks explaining each model's performance characteristics and use cases.",
-                tech: "Python // TensorFlow // Neural",
-                status: "ACADEMIC",
-                tags: ["NEURAL", "RESEARCH"],
-                link: "https://github.com/KrishnaSrinivas-24/ML_TERM-PROJECT",
-                btnText: "EXPLORE",
-                btnIcon: "search"
-            },
-            {
-                id: "ml_projects",
-                name: "ML Projects Collection",
-                image: "presets/ml_projects.png",
-                description: "Curated collection of machine learning projects completed during my internship at CODTECH IT SOLUTIONS. Includes implementations of classification algorithms, regression models, clustering techniques, and recommendation systems. Each project features clean, well-documented code with comprehensive analysis of model performance metrics. Technologies include scikit-learn, pandas, and matplotlib for end-to-end ML pipelines.",
-                tech: "Jupyter // Scikit-learn // Pandas",
-                status: "INTERNSHIP",
-                tags: ["CODTECH", "NOTEBOOK"],
-                link: "https://github.com/KrishnaSrinivas-24/ML-Projects",
-                btnText: "BROWSE",
-                btnIcon: "folder"
             }
         ]
     },
@@ -96,59 +60,15 @@ const projectCategories = {
         projects: [
             {
                 id: "campus_pulse",
-                name: "Campus Pulse",
-                image: "presets/campus_pulse.png",
-                description: "Built a comprehensive university event management mobile application using React Native and TypeScript. The app serves as a centralized hub for all campus events, club activities, and announcements. Features include real-time push notifications, event RSVP system, interactive campus maps, and social sharing capabilities. Implements a Node.js backend with MongoDB for scalable data management and real-time updates via WebSockets.",
-                tech: "TypeScript // React Native // Node",
-                status: "NETWORK NODE",
-                tags: ["NODE", "REALTIME"],
+                name: "CampusPulse",
+                image: "presets/campus_pulse_gen.png",
+                description: "A comprehensive, gamified campus event ecosystem designed to connect students and organizations. Features frictionless QR ticketing, a real-time event discovery feed, and a psychological rewards-driven gamification loop to maximize student engagement and attendance.",
+                tech: "Next.js // React Native // Firebase",
+                status: "DEVELOPMENT",
+                tags: ["FULLSTACK", "GAMIFICATION"],
                 link: "https://github.com/KrishnaSrinivas-24/CAMPUS-PULSE",
-                btnText: "CONNECT",
-                btnIcon: "wifi"
-            },
-            {
-                id: "oceangate",
-                name: "OceanGate",
-                image: "presets/oceangate.png",
-                description: "Developed a sophisticated ocean data visualization platform as part of the SIH (Smart India Hackathon) challenge for INCOIS. The application processes and displays complex oceanographic data through interactive dashboards, maps, and charts. Built with Next.js 14 and deployed on Vercel for optimal performance. Features include real-time data streaming, customizable visualization widgets, and export capabilities for research purposes.",
-                tech: "TypeScript // Next.js // Vercel",
-                status: "DEPLOYED",
-                tags: ["LIVE", "ENV"],
-                link: "https://github.com/KrishnaSrinivas-24/OceanGate",
-                btnText: "LAUNCH",
-                btnIcon: "external-link"
-            }
-        ]
-    },
-    tools: {
-        name: "TOOLS & UTILITIES",
-        label: "SECTOR_UTIL",
-        color: "green",
-        icon: "presets/tools_folder.png",
-        projects: [
-            {
-                id: "content_audit",
-                name: "Content Audit Tool",
-                image: "presets/content_audit.png",
-                description: "Developed an intelligent content auditing system that analyzes documents for quality, consistency, and SEO optimization. The tool uses NLP techniques to identify issues like duplicate content, readability problems, and missing metadata. Features automated report generation with actionable insights and recommendations. Built with Python and integrates with popular CMS platforms for seamless workflow integration.",
-                tech: "Python // NLP // Analysis",
-                status: "UTILITY",
-                tags: ["AUDIT", "NLP"],
-                link: "https://github.com/KrishnaSrinivas-24/Content_Audit_Tool",
-                btnText: "EXECUTE",
-                btnIcon: "play"
-            },
-            {
-                id: "magic_code",
-                name: "Magic with Code",
-                image: "presets/magic_code.png",
-                description: "A growing collection of Python utilities and automation scripts designed to streamline everyday development workflows. Includes tools for file organization, data processing, API testing, and code generation. Each utility is designed with extensibility in mind, featuring clean interfaces and comprehensive documentation. Perfect for developers looking to boost productivity and automate repetitive tasks.",
-                tech: "Python // Automation // Scripts",
-                status: "TOOLKIT",
-                tags: ["PYTHON", "AUTO"],
-                link: "https://github.com/KrishnaSrinivas-24/Magic_with_Code",
-                btnText: "CAST SPELL",
-                btnIcon: "sparkles"
+                btnText: "CONNECT HUB",
+                btnIcon: "smartphone"
             }
         ]
     }
