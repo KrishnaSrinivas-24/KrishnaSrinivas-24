@@ -44,7 +44,7 @@
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ AGENT DOSSIER ◆                                                               FILE: MKS-2409 │
+│  ◆ PROFESSIONAL SUMMARY ◆                                                     SYSTEM ARCHITECT │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -404,10 +404,10 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 
 <div align="center">
 
-### 📊 **ALL ACTIVE MISSIONS**
+### 📊 **PROJECT ARCHIVE**
 
 <details>
-<summary><b>🤖 SECTOR_AI: Artificial Intelligence (3 Projects)</b></summary>
+<summary><b>🤖 AI & AGENTIC SYSTEMS (3 Projects)</b></summary>
 <br/>
 
 | Project | Description | Link |
@@ -421,7 +421,7 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 </details>
 
 <details>
-<summary><b>📊 SECTOR_ML: Machine Learning (3 Projects)</b></summary>
+<summary><b>📊 MACHINE LEARNING (3 Projects)</b></summary>
 <br/>
 
 | Project | Description | Link |
@@ -433,7 +433,7 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 </details>
 
 <details>
-<summary><b>🌐 SECTOR_WEB: Full Stack Applications (3 Projects)</b></summary>
+<summary><b>🌐 FULL STACK & WEB (3 Projects)</b></summary>
 <br/>
 
 | Project | Description | Link |
@@ -445,7 +445,7 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 </details>
 
 <details>
-<summary><b>🛠️ SECTOR_UTIL: Tools & Utilities (2 Projects)</b></summary>
+<summary><b>🛠️ UTILITIES & TOOLS (2 Projects)</b></summary>
 <br/>
 
 | Project | Description | Link |
@@ -630,7 +630,7 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                                                                                  │
-│              "Building AI systems that don't just work — they think, adapt, evolve."            │
+│              "Building AI systems that don't just work — they think, adapt, evolve."             │
 │                                         — Krishna Srinivas                                       │
 │                                                                                                  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────┤
@@ -645,6 +645,6 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 <!-- 
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
 │  KRISHNA SRINIVAS | AI ARCHITECT | SYSTEM DESIGNER                                                │
-│  Google Cloud Champion | AI/ML Engineer | Building the Future                                    │
+│  Google Cloud Champion | AI/ML Engineer | Building the Future                                     │
 └───────────────────────────────────────────────────────────────────────────────────────────────────┘
 -->
