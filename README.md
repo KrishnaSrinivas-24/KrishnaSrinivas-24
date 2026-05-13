@@ -8,42 +8,31 @@
 <!-- ═══════════════════════════════════════════════════════════════════════════════════════════════════ -->
 
 <div align="center">
-
-<!-- CLASSIFIED HEADER -->
-```
-╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
-║  ██╗███╗   ██╗██╗████████╗██╗ █████╗ ████████╗██╗██╗   ██╗███████╗    ███████╗██╗██╗     ███████╗ ║
-║  ██║████╗  ██║██║╚══██╔══╝██║██╔══██╗╚══██╔══╝██║██║   ██║██╔════╝    ██╔════╝██║██║     ██╔════╝ ║
-║  ██║██╔██╗ ██║██║   ██║   ██║███████║   ██║   ██║██║   ██║█████╗      █████╗  ██║██║     █████╗   ║
-║  ██║██║╚██╗██║██║   ██║   ██║██╔══██║   ██║   ██║╚██╗ ██╔╝██╔══╝      ██╔══╝  ██║██║     ██╔══╝   ║
-║  ██║██║ ╚████║██║   ██║   ██║██║  ██║   ██║   ██║ ╚████╔╝ ███████╗    ██║     ██║███████╗███████╗ ║
-║  ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝  ╚══════╝    ╚═╝     ╚═╝╚══════╝╚══════╝ ║
-╠══════════════════════════════════════════════════════════════════════════════════════════════════╣
-║                           🔐 CLEARANCE LEVEL: INNOVATION INITIATIVE                               ║
-╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
-```
+  <h1>Krishna Srinivas</h1>
+  <p><b>Agentic AI Architect | System Designer | Full-Stack Developer</b></p>
+</div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f3ff,100:ff1744&height=120&section=header&text=&fontSize=0" width="100%"/>
 
 <!-- AGENT IDENTIFICATION -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=40&duration=3000&pause=1000&color=00F3FF&center=true&vCenter=true&width=800&height=70&lines=%E2%9A%A1+AGENT+MKS-2409+%E2%9A%A1;KRISHNA+SRINIVAS;AGENTIC+%26+AI+ARCHITECT;GCP+CHAMPION+%7C+SIH+FINALIST" alt="Agent Title" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=40&duration=3000&pause=1000&color=00F3FF&center=true&vCenter=true&width=800&height=70&lines=KRISHNA+SRINIVAS;AGENTIC+AI+ARCHITECT;GCP+CLOUD+CHAMPION;SIH+2024+FINALIST" alt="Title SVG" />
 
 <br/>
 
 <!-- STATUS BADGES -->
-<img src="https://img.shields.io/badge/STATUS-ARCHITECTING-00f3ff?style=for-the-badge&labelColor=0a0a0a&logo=statuspage&logoColor=00f3ff" alt="Status"/>
-<img src="https://img.shields.io/badge/SPEC-AGENTIC_%26_AI_ARCHITECT-ff1744?style=for-the-badge&labelColor=0a0a0a&logo=openai&logoColor=ff1744" alt="Specialization"/>
-<img src="https://img.shields.io/badge/MISSION-ARCHITECT_%26_ENGINEER-9c27b0?style=for-the-badge&labelColor=0a0a0a&logo=target&logoColor=9c27b0" alt="Mission"/>
-<img src="https://img.shields.io/badge/GCP-CLOUD_CHAMPION-4285F4?style=for-the-badge&labelColor=0a0a0a&logo=google-cloud&logoColor=4285F4" alt="Cloud"/>
+<img src="https://img.shields.io/badge/ROLE-AI_ARCHITECT-00f3ff?style=for-the-badge&labelColor=0a0a0a&logo=statuspage&logoColor=00f3ff" alt="Role"/>
+<img src="https://img.shields.io/badge/TECH-AGENTIC_AI-ff1744?style=for-the-badge&labelColor=0a0a0a&logo=openai&logoColor=ff1744" alt="Specialization"/>
+<img src="https://img.shields.io/badge/FOCUS-SYSTEM_DESIGN-9c27b0?style=for-the-badge&labelColor=0a0a0a&logo=target&logoColor=9c27b0" alt="Focus"/>
+<img src="https://img.shields.io/badge/CERT-GCP_CHAMPION-4285F4?style=for-the-badge&labelColor=0a0a0a&logo=google-cloud&logoColor=4285F4" alt="Cloud"/>
 
 <br/><br/>
 
 <!-- PROFILE METRICS -->
 <a href="https://github.com/KrishnaSrinivas-24">
-  <img src="https://komarev.com/ghpvc/?username=KrishnaSrinivas-24&style=for-the-badge&color=00f3ff&label=PROFILE+SCANS" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=KrishnaSrinivas-24&style=for-the-badge&color=00f3ff&label=PROFILE+VIEWS" alt="Profile views"/>
 </a>
 <a href="https://github.com/KrishnaSrinivas-24?tab=followers">
-  <img src="https://img.shields.io/github/followers/KrishnaSrinivas-24?style=for-the-badge&logo=github&label=ALLIANCE+MEMBERS&color=00f3ff&labelColor=0a0a0a" alt="Followers"/>
+  <img src="https://img.shields.io/github/followers/KrishnaSrinivas-24?style=for-the-badge&logo=github&label=FOLLOWERS&color=00f3ff&labelColor=0a0a0a" alt="Followers"/>
 </a>
 <img src="https://img.shields.io/github/stars/KrishnaSrinivas-24?style=for-the-badge&logo=github&label=TOTAL+STARS&color=ffd700&labelColor=0a0a0a" alt="Stars"/>
 
@@ -65,29 +54,28 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🎯 MISSION BRIEFING
+### 👨‍💻 CORE PROFILE
 
 ```yaml
-Agent        : Krishna Srinivas
-Codename     : MKS-2409
-Base         : GITAM University, India
-Specialization: Agentic & AI Architect
-Year         : B.Tech Final Year (AIML)
-Status       : ◆ ARCHITECTING
-Mission      : Architect & Engineer
-Clearance    : GCP Champion | SIH Finalist
+Developer    : Krishna Srinivas
+Education    : GITAM University, India
+Specialization: Agentic AI & System Architecture
+Domain       : B.Tech (AIML) Final Year
+Status       : ◆ Building Scalable AI
+Objective    : Architecting Intelligent Systems
+Recognition  : SIH 2024 Finalist | GCP Cloud Champion
 ```
 
 </td>
 <td width="50%" valign="top">
 
-### 📡 CURRENT OPERATIONS
+### 🏗️ STRATEGIC FOCUS
 
-- 🤖 **Primary:** [**J.A.R.V.I.S.**](https://github.com/KrishnaSrinivas-24/JARVIS) — Multi-Agent AI Orchestration System
-- 📸 **Active:** [**SchoolSnap**](https://github.com/KrishnaSrinivas-24/SchoolSnap) — Biometric AI Parent Portal (Production)
-- 🔮 **Building:** OMNITRIX — Ben 10-inspired 13-agent local AI system (Gemma 4)
-- 🎯 **Focus:** Agentic systems, RAG pipelines, system design & scalable AI
-- ⚡ **Philosophy:** Not just building systems — building what comes next.
+- 🤖 **Multi-Agent Systems:** [**J.A.R.V.I.S.**](https://github.com/KrishnaSrinivas-24/JARVIS) — Advanced AI Orchestration
+- 📸 **Production AI:** [**SchoolSnap**](https://github.com/KrishnaSrinivas-24/SchoolSnap) — Enterprise Biometric Retrieval
+- 🔮 **Local LLMs:** OMNITRIX — Edge-AI Agent Persona Framework
+- 🎯 **Expertise:** Agentic Workflows, RAG Architecture, System Design
+- ⚡ **Vision:** Engineering the interface between human intent and machine logic.
 
 </td>
 </tr>
@@ -99,7 +87,7 @@ Clearance    : GCP Champion | SIH Finalist
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ QUICK ACCESS CHANNELS ◆                                                    [RECRUITER LINKS] │
+│  ◆ CONNECT & CONTACT ◆                                                       [PROFESSIONAL] │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -323,7 +311,7 @@ Clearance    : GCP Champion | SIH Finalist
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ HOLOPIN ACHIEVEMENT BOARD ◆                                           [COMMUNITY CREDENTIALS] │
+│  ◆ PROFESSIONAL RECOGNITION ◆                                                   [CREDENTIALS] │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -339,7 +327,7 @@ Clearance    : GCP Champion | SIH Finalist
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  ◆ MISSION DOSSIER ◆                                                         [ACTIVE OPERATIONS] │
+│  ◆ PROJECT PORTFOLIO ◆                                                       [FEATURED WORK] │
 └──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -347,7 +335,7 @@ Clearance    : GCP Champion | SIH Finalist
 
 <div align="center">
 
-**🌟 FEATURED MISSIONS (Top Tier)**
+**🌟 TOP TIER PROJECTS**
 
 | Project | Description | Tech Stack | Status |
 |---------|-------------|-----------|--------|
@@ -615,7 +603,7 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
   <img src="https://img.shields.io/badge/Google_Cloud-0d1117?style=for-the-badge&logo=google-cloud&logoColor=4285F4" alt="Google Cloud"/>
 </a>
 <a href="mailto:krishnasrinivas2409@gmail.com">
-  <img src="https://img.shields.io/badge/Secure_Mail-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/>
+  <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/>
 </a>
 <a href="https://krishnasrinivas-24.github.io/My-Portfolio/" target="_blank">
   <img src="https://img.shields.io/badge/◆_PORTFOLIO-0d1117?style=for-the-badge&logo=vercel&logoColor=00f3ff" alt="Portfolio"/>
@@ -640,14 +628,14 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                                  ║
-║              "Building AI systems that don't just work — they think, adapt, evolve."            ║
-║                                         — AGENT MKS-2409                                         ║
-║                                                                                                  ║
-╠══════════════════════════════════════════════════════════════════════════════════════════════════╣
-║                 ⚡ INNOVATION INITIATIVE • CLOUD CHAMPION • EST. 2024 ⚡                          ║
-╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                                  │
+│              "Building AI systems that don't just work — they think, adapt, evolve."            │
+│                                         — Krishna Srinivas                                       │
+│                                                                                                  │
+├──────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                        AI ARCHITECT • CLOUD CHAMPION • EST. 2024                                 │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f3ff,100:ff1744&height=100&section=footer" width="100%"/>
@@ -655,8 +643,8 @@ SIH 2024 finalist — text-to-SQL conversion for complex oceanographic queries w
 </div>
 
 <!-- 
-╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
-║  END OF CLASSIFIED DOCUMENT • INNOVATION INITIATIVE • FILE: MKS-2409                              ║
-║  Google Cloud Champion | 27 Skills Badges | AI/ML Engineer | Building the Future                ║
-╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
+┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  KRISHNA SRINIVAS | AI ARCHITECT | SYSTEM DESIGNER                                                │
+│  Google Cloud Champion | AI/ML Engineer | Building the Future                                    │
+└───────────────────────────────────────────────────────────────────────────────────────────────────┘
 -->
