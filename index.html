@@ -3608,6 +3608,37 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Blog Card 5 -->
+                    <div class="blog-card group bg-gradient-to-br from-charcoal to-black border border-tech-blue/30 rounded-xl overflow-hidden hover:border-tech-blue/60 transition-all duration-300 cursor-pointer"
+                        onclick="openLog('log-5')">
+                        <div class="h-40 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-tech-blue to-blue-600 flex items-center justify-center">
+                                <div class="text-center">
+                                    <i data-lucide="shield" class="w-12 h-12 text-white/80 mx-auto mb-2"></i>
+                                    <p class="text-white/60 text-xs font-mono">BIOMETRICS</p>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span
+                                    class="px-2 py-1 bg-tech-blue/10 text-tech-blue text-[10px] font-mono rounded border border-tech-blue/20">FULLSTACK AI</span>
+                                <span class="text-xs text-gray-500 font-mono">MAY 14, 2026</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-tech-blue transition-colors mb-2">
+                                SchoolSnap: Biometric Photo Retrieval Portal
+                            </h3>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                                Architecting a production-grade facial recognition portal using FAISS vector indexing, FastAPI endpoints, and a multi-container Docker compose environment.
+                            </p>
+                            <div class="flex items-center gap-2 text-tech-blue text-xs font-medium">
+                                Read More <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- More Posts Link -->
@@ -3934,6 +3965,31 @@
                                 <li>> FRICTIONLESS QR CHECK-INS</li>
                             </ul>
                         </div>
+                    </div>
+                `
+            },
+            'log-5': {
+                title: "SchoolSnap: Biometric Parent Portal",
+                date: "MAY 14, 2026",
+                tag: "FULLSTACK AI",
+                tagColor: "tech-blue",
+                image: "presets/floatchat.png",
+                body: `
+                    <div class="space-y-4">
+                        <p class="text-tech-blue font-mono text-xs uppercase tracking-widest">Project: Biometric Photo Retrieval System</p>
+                        <p>Designed and deployed a production-grade facial recognition system enabling parents to instantly retrieve high-resolution photos of their children from school events.</p>
+                        
+                        <div class="bg-black/30 p-4 border-l-2 border-tech-blue rounded">
+                            <h4 class="text-white font-bold text-sm mb-2">Architectural Breakdown</h4>
+                            <p class="text-xs">Engineered a highly optimized vector search pipeline using FAISS (Facebook AI Similarity Search) and ResNet embeddings. Decoupled services into a 4-container Docker stack: React client, FastAPI gateway, FAISS matcher service, and PostgreSQL metadata store.</p>
+                        </div>
+                        
+                        <p class="text-sm">Key Engineering Milestones:</p>
+                        <ul class="list-disc pl-5 text-xs space-y-2 text-gray-300">
+                            <li><strong>FAISS Vector Search:</strong> Sub-50ms facial match query latency across thousands of high-res images.</li>
+                            <li><strong>Privacy-First Verification:</strong> Multi-factor selfie validation checks to prevent unauthorized database matching.</li>
+                            <li><strong>DevOps Containerization:</strong> Standardized production orchestration with unified logging, caching layers, and volumes.</li>
+                        </ul>
                     </div>
                 `
             }
