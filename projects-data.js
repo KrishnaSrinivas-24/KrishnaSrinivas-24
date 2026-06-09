@@ -69,6 +69,18 @@ const projectCategories = {
                 link: "https://github.com/KrishnaSrinivas-24/CAMPUS-PULSE",
                 btnText: "CONNECT HUB",
                 btnIcon: "smartphone"
+            },
+            {
+                id: "schoolsnap",
+                name: "SchoolSnap",
+                image: "presets/floatchat.png",
+                description: "Production-grade biometric parent portal for school photo retrieval. Parents scan/upload selfies to retrieve high-resolution event photos using FAISS vector search. Engineered with a containerized 4-container microservices architecture.",
+                tech: "Python // FastAPI // FAISS // React // Docker",
+                status: "V1 PRODUCTION",
+                tags: ["AI", "BIOMETRICS", "FAISS"],
+                link: "https://github.com/KrishnaSrinivas-24/SchoolSnap",
+                btnText: "ACCESS PORTAL",
+                btnIcon: "shield"
             }
         ]
     }
